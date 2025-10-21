@@ -1,5 +1,6 @@
 import { Star, Quote } from 'lucide-react';
 import Image from 'next/image';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
 const testimonials = [
   {
@@ -64,46 +65,50 @@ export default function SocialProof() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
+            <Card
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0"
             >
-              {/* Rating */}
-              <div className="flex items-center space-x-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-secondary fill-current" />
-                ))}
-              </div>
-
-              {/* Quote */}
-              <div className="mb-6">
-                <Quote className="w-8 h-8 text-primary/30 mb-4" />
-                <p className="text-gray-700 text-lg leading-relaxed italic">
-                  &ldquo;{testimonial.content}&rdquo;
-                </p>
-              </div>
-
-              {/* Author */}
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
-                  <Image
-                    src={`/images/testimonials/${testimonial.name.toLowerCase().replace(' ', '-').replace('.', '')}.png`}
-                    alt={`Foto de ${testimonial.name}`}
-                    width={48}
-                    height={48}
-                    className="w-full h-full object-cover"
-                  />
+              <CardHeader className="p-0">
+                {/* Rating */}
+                <div className="flex items-center space-x-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-secondary fill-current" />
+                  ))}
                 </div>
-                <div>
-                  <h4 className="font-semibold text-foreground">
-                    {testimonial.name}
-                  </h4>
-                  <p className="text-gray-500 text-sm">
-                    {testimonial.role}
+
+                {/* Quote */}
+                <div className="mb-6">
+                  <Quote className="w-8 h-8 text-primary/30 mb-4" />
+                  <p className="text-gray-700 text-lg leading-relaxed italic">
+                    &ldquo;{testimonial.content}&rdquo;
                   </p>
                 </div>
-              </div>
-            </div>
+              </CardHeader>
+
+              <CardContent className="p-0">
+                {/* Author */}
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
+                    <Image
+                      src={`/images/testimonials/${testimonial.name.toLowerCase().replace(' ', '-').replace('.', '')}.png`}
+                      alt={`Foto de ${testimonial.name}`}
+                      width={48}
+                      height={48}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-gray-500 text-sm">
+                      {testimonial.role}
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
 

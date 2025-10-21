@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface CTAIntermediarioProps {
   onCtaClick: () => void;
@@ -17,14 +18,15 @@ export default function CTAIntermediario({ onCtaClick }: CTAIntermediarioProps) 
             Em poucos minutos, você pode transformar a rotina da sua casa com o Método Brinca+.
           </p>
 
-          <button
+          <Button
             onClick={onCtaClick}
             data-evt="cta-intermediario"
+            size="lg"
             className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-12 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center space-x-3 mx-auto"
           >
             <span>Quero Começar Hoje 🚀</span>
             <ArrowRight className="w-7 h-7" />
-          </button>
+          </Button>
         </div>
       </div>
     </section>

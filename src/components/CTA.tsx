@@ -1,4 +1,5 @@
 import { ArrowRight, Shield, CreditCard } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface CTAProps {
   onCtaClick: () => void;
@@ -23,14 +24,15 @@ export default function CTA({ onCtaClick }: CTAProps) {
             </p>
           </div>
 
-          <button
+          <Button
             onClick={onCtaClick}
             data-evt="cta-primary"
+            size="lg"
             className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-12 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center space-x-3 mx-auto mb-8"
           >
             <span>Baixar Agora 🧠</span>
             <ArrowRight className="w-8 h-8" />
-          </button>
+          </Button>
 
           {/* Selos de segurança */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">

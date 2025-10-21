@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import Logo from './Logo';
+import { Button } from '@/components/ui/button';
 
 interface HeroProps {
   onCtaClick: () => void;
@@ -48,14 +49,15 @@ export default function Hero({ onCtaClick }: HeroProps) {
             {/* CTA centralizado */}
             <div className="space-y-4">
               <div className="flex justify-center">
-                <button
+                <Button
                   onClick={onCtaClick}
                   data-evt="cta-primary"
+                  size="lg"
                   className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-12 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"
                 >
                   <span>Baixar o Guia Agora</span>
                   <ArrowRight className="w-7 h-7" />
-                </button>
+                </Button>
               </div>
               
               {/* Linha de urgência */}

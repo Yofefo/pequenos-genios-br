@@ -1,4 +1,5 @@
 import { Brain, Lightbulb, Heart, Users, Clock, Shield } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const benefits = [
   {
@@ -48,22 +49,26 @@ export default function Benefits() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div
+            <Card
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0"
             >
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="bg-primary/10 p-3 rounded-xl">
-                  <benefit.icon className="w-8 h-8 text-primary" />
+              <CardHeader className="p-0 mb-4">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-primary/10 p-3 rounded-xl">
+                    <benefit.icon className="w-8 h-8 text-primary" />
+                  </div>
+                  <CardTitle className="text-xl font-semibold text-foreground">
+                    {benefit.title}
+                  </CardTitle>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">
-                  {benefit.title}
-                </h3>
-              </div>
-              <p className="text-gray-600 leading-relaxed">
-                {benefit.description}
-              </p>
-            </div>
+              </CardHeader>
+              <CardContent className="p-0">
+                <p className="text-gray-600 leading-relaxed">
+                  {benefit.description}
+                </p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
