@@ -45,3 +45,4 @@ echo "   - Configure DNS na Hostinger"
 echo ""
 echo "✅ PROJETO PRONTO PARA DEPLOY!"
 echo "📱 Siga os passos acima para publicar"
+

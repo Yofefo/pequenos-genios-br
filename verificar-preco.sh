@@ -40,3 +40,4 @@ echo "🎯 PREÇO ATUALIZADO PARA: R$ 27,90"
 echo "📱 Acesse http://localhost:3000 para ver o resultado"
 echo ""
 echo "✅ VERIFICAÇÃO CONCLUÍDA!"
+

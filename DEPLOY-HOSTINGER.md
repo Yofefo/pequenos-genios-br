@@ -143,3 +143,4 @@ Valor: seudominio.com
 - **Performance:** Otimizada
 - **Deploy:** Automático (Vercel)
 - **Manutenção:** Mínima
+

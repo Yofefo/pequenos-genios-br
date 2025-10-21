@@ -84,3 +84,4 @@ npx vercel --prod
 4. 📱 **Compartilhar** - Divulgar sua landing page!
 
 **Parabéns! Sua landing page está no ar!** 🎉
+

@@ -56,27 +56,30 @@ export default function Hero({ onCtaClick }: HeroProps) {
           </div>
 
           {/* Mockup */}
-          <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
-              <div className="rounded-lg h-64 overflow-hidden">
+          <div className="relative max-w-md mx-auto lg:mx-0">
+            {/* Mockup principal - Capa do PDF */}
+            <div className="bg-white rounded-2xl shadow-2xl p-6 transform rotate-3 hover:rotate-0 transition-transform duration-300 relative z-10">
+              <div className="rounded-lg overflow-hidden">
                 <Image
                   src="/images/hero/cover.png"
                   alt="Capa do PDF - Projeto Pequenos Gênios"
-                  width={1024}
-                  height={1024}
-                  className="w-full h-full object-cover"
+                  width={400}
+                  height={300}
+                  className="w-full h-auto object-contain"
+                  priority
                 />
               </div>
             </div>
             
-            <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-2xl p-6 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-              <div className="rounded-lg h-32 overflow-hidden">
+            {/* Mockup secundário - Crianças brincando */}
+            <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-2xl p-4 transform -rotate-3 hover:rotate-0 transition-transform duration-300 z-20">
+              <div className="rounded-lg overflow-hidden">
                 <Image
                   src="/images/hero/kids-playing.png"
                   alt="Crianças brincando com o Método Brinca+"
-                  width={1024}
-                  height={1024}
-                  className="w-full h-full object-cover"
+                  width={200}
+                  height={150}
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>

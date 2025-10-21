@@ -65,3 +65,4 @@ echo "1. Acesse http://localhost:3000"
 echo "2. Verifique se as imagens aparecem"
 echo "3. Se não aparecerem, verifique o console do navegador"
 echo "4. Se houver erros, execute: npm run dev"
+

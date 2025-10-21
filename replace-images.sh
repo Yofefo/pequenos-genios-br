@@ -41,3 +41,4 @@ echo "4. Tamanhos ideais: 400x300px para cards, 200x200px para fotos"
 echo ""
 
 echo "✅ Estrutura pronta! Agora adicione suas imagens!"
+

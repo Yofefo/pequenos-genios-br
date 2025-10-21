@@ -71,3 +71,4 @@ window.open('https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f', '_bl
 ---
 
 **🎯 RESULTADO:** Gateway de pagamento funcionando perfeitamente! 💳
+

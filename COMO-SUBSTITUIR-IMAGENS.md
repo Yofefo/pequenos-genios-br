@@ -101,3 +101,4 @@ Suas imagens 1024x1024 serão automaticamente redimensionadas para:
 ---
 
 **🎯 RESULTADO:** Landing page com suas imagens reais funcionando perfeitamente! 🚀
+
