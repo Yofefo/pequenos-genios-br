@@ -1,9 +1,12 @@
 export const colors = {
-  primary: '#5B8DEF', // azul suave
-  secondary: '#F6C945', // amarelo bebê
-  accent: '#F47C7C', // coral
-  background: '#FFFDF7', // fundo creme
-  foreground: '#1a1a1a', // texto escuro
+  primary: '#4A90E2', // azul vibrante
+  secondary: '#FFD93D', // amarelo dourado
+  accent: '#FF6B6B', // coral vibrante
+  background: '#FFF8E7', // fundo creme quente
+  foreground: '#2D3748', // texto escuro suave
+  success: '#48BB78', // verde sucesso
+  warning: '#ED8936', // laranja alerta
+  info: '#4299E1', // azul informação
 };
 
 export const theme = {

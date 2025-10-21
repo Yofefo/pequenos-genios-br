@@ -48,7 +48,7 @@ export default function SocialProof() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Pais e professores aprovam!
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto mb-6">
             Mais de 500 famílias transformando o tédio em aprendizado.
           </p>
           <div className="inline-flex items-center space-x-2 bg-secondary/10 px-6 py-3 rounded-full">
@@ -80,7 +80,7 @@ export default function SocialProof() {
                 {/* Quote */}
                 <div className="mb-6">
                   <Quote className="w-8 h-8 text-primary/30 mb-4" />
-                  <p className="text-gray-700 text-lg leading-relaxed italic">
+                  <p className="text-foreground/80 text-lg leading-relaxed italic">
                     &ldquo;{testimonial.content}&rdquo;
                   </p>
                 </div>
@@ -102,7 +102,7 @@ export default function SocialProof() {
                     <h4 className="font-semibold text-foreground">
                       {testimonial.name}
                     </h4>
-                    <p className="text-gray-500 text-sm">
+                    <p className="text-foreground/60 text-sm">
                       {testimonial.role}
                     </p>
                   </div>

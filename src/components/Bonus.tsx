@@ -29,7 +29,7 @@ export default function Bonus() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Presente de Lançamento 🎁
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto mb-4">
             Ao garantir seu acesso hoje, você ainda leva 10 brincadeiras extras + Planner semanal de brincadeiras.
           </p>
           <Badge variant="destructive" className="px-6 py-3 rounded-full text-lg font-bold">
@@ -56,7 +56,7 @@ export default function Bonus() {
                 </div>
               </CardHeader>
               <CardContent className="p-0">
-                <p className="text-gray-600 text-lg mb-3">
+                <p className="text-foreground/70 text-lg mb-3">
                   {bonus.description}
                 </p>
                 <Badge className="bg-accent/10 text-accent px-4 py-2 rounded-lg text-sm font-semibold">

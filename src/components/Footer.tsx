@@ -12,7 +12,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-white mb-4">
               Projeto Pequenos Gênios
             </h3>
-            <p className="text-gray-300 mb-6 max-w-md">
+            <p className="text-white/80 mb-6 max-w-md">
               Transforme qualquer momento em aprendizado — usando só o que você já tem em casa.
             </p>
             <div className="text-sm text-gray-400">
@@ -58,7 +58,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white mb-4">
               Contato
             </h4>
-            <div className="space-y-2 text-gray-300">
+            <div className="space-y-2 text-white/80">
               <p>E-mail: suporte@pequenosgenios.fun</p>
               <p>Instagram: @projeto.pequenosgenios</p>
             </div>

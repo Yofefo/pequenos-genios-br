@@ -37,7 +37,7 @@ export default function FAQ() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Perguntas frequentes
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-foreground/80">
             Tire suas dúvidas sobre o Método Brinca+
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function FAQ() {
                 </h3>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-6">
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-foreground/70 leading-relaxed">
                   {faq.answer}
                 </p>
               </AccordionContent>

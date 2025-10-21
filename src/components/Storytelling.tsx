@@ -10,7 +10,7 @@ export default function Storytelling() {
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
               Como nasceu o Método Brinca+
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-foreground/80 leading-relaxed">
               O Projeto Pequenos Gênios nasceu da rotina corrida de pais que queriam estimular seus filhos sem depender de telas, brinquedos caros ou muito tempo livre. O que parecia impossível virou um método simples e acessível — o Brinca+.
             </p>
             <div className="flex items-center space-x-4">

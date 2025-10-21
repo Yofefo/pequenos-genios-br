@@ -25,7 +25,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 </span>
               </h1>
               
-              <p className="text-2xl lg:text-3xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-2xl lg:text-3xl text-foreground/80 leading-relaxed max-w-3xl mx-auto">
                 30 brincadeiras inteligentes que estimulam a criatividade e reduzem o tempo de tela — usando o que você já tem em casa.
               </p>
             </div>

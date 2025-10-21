@@ -14,7 +14,7 @@ export default function CTAIntermediario({ onCtaClick }: CTAIntermediarioProps) 
             Dê o primeiro passo agora!
           </h2>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Em poucos minutos, você pode transformar a rotina da sua casa com o Método Brinca+.
           </p>
 

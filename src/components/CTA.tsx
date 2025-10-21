@@ -19,7 +19,7 @@ export default function CTA({ onCtaClick }: CTAProps) {
               <span className="text-2xl text-gray-500 line-through">De R$ 57,90</span>
               <span className="text-4xl font-bold text-primary">Por apenas R$ 27,90</span>
             </div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
               você recebe o guia completo + bônus exclusivos. Acesso imediato após a compra.
             </p>
           </div>
@@ -36,12 +36,12 @@ export default function CTA({ onCtaClick }: CTAProps) {
 
           {/* Selos de segurança */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
-            <div className="flex items-center space-x-2 text-gray-600">
-              <Shield className="w-5 h-5 text-green-500" />
+            <div className="flex items-center space-x-2 text-foreground/70">
+              <Shield className="w-5 h-5 text-success" />
               <span className="font-semibold">Pagamento seguro</span>
             </div>
-            <div className="flex items-center space-x-2 text-gray-600">
-              <CreditCard className="w-5 h-5 text-green-500" />
+            <div className="flex items-center space-x-2 text-foreground/70">
+              <CreditCard className="w-5 h-5 text-success" />
               <span className="font-semibold">7 dias de garantia</span>
             </div>
           </div>

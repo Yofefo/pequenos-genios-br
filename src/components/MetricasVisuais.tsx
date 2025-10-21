@@ -8,7 +8,7 @@ export default function MetricasVisuais() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Números que comprovam o sucesso
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Veja como o Método Brinca+ está transformando famílias
           </p>
         </div>
@@ -26,7 +26,7 @@ export default function MetricasVisuais() {
               <p className="text-lg font-semibold text-foreground mb-2">
                 famílias já usam o Método Brinca+
               </p>
-              <p className="text-gray-600">
+              <p className="text-foreground/70">
                 E o número cresce a cada dia!
               </p>
             </CardContent>
@@ -44,7 +44,7 @@ export default function MetricasVisuais() {
               <p className="text-lg font-semibold text-foreground mb-2">
                 relatam mais criatividade e menos telas
               </p>
-              <p className="text-gray-600">
+              <p className="text-foreground/70">
                 Resultados comprovados pelos pais
               </p>
             </CardContent>
@@ -62,7 +62,7 @@ export default function MetricasVisuais() {
               <p className="text-lg font-semibold text-foreground mb-2">
                 economia por mês em brinquedos
               </p>
-              <p className="text-gray-600">
+              <p className="text-foreground/70">
                 Usando apenas o que você já tem em casa
               </p>
             </CardContent>

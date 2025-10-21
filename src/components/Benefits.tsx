@@ -42,7 +42,7 @@ export default function Benefits() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             O que seu filho/aluno ganha
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Desenvolva habilidades essenciais de forma divertida e natural
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function Benefits() {
                 </div>
               </CardHeader>
               <CardContent className="p-0">
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-foreground/70 leading-relaxed">
                   {benefit.description}
                 </p>
               </CardContent>

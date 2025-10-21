@@ -6,7 +6,7 @@ export default function ProblemTransformation() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             O problema de hoje
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Crianças cada vez mais dependentes de telas, pais sem tempo e brinquedos cada vez mais caros.
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function ProblemTransformation() {
               <h3 className="text-2xl font-bold text-foreground">
                 Sem o Método Brinca+
               </h3>
-              <div className="space-y-3 text-gray-600">
+              <div className="space-y-3 text-foreground/70">
                 <p className="text-lg">• Tédio constante</p>
                 <p className="text-lg">• Dependência de telas</p>
                 <p className="text-lg">• Brinquedos caros</p>
@@ -40,7 +40,7 @@ export default function ProblemTransformation() {
               <h3 className="text-2xl font-bold text-foreground">
                 Com o Método Brinca+
               </h3>
-              <div className="space-y-3 text-gray-600">
+              <div className="space-y-3 text-foreground/70">
                 <p className="text-lg">• Aprendizado leve e divertido</p>
                 <p className="text-lg">• Vínculo em família</p>
                 <p className="text-lg">• Muita criatividade</p>
