@@ -25,14 +25,41 @@ export default function Storytelling() {
           
           {/* Imagem */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8">
-              <Image
-                src="/images/storytelling/family-playing.png"
-                alt="Família brincando juntos com o Método Brinca+"
-                width={500}
-                height={400}
-                className="w-full h-auto object-contain rounded-xl"
-              />
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 min-h-[400px] flex items-center justify-center">
+                <Image
+                  src="/images/storytelling/family-playing.png"
+                  alt="Família brincando juntos com o Método Brinca+"
+                  width={500}
+                  height={400}
+                  className="w-full h-auto object-cover rounded-xl hover:scale-105 transition-transform duration-300"
+                  onError={(e) => {
+                    // Fallback visual quando a imagem não carregar
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const parent = target.parentElement;
+                    if (parent) {
+                      parent.innerHTML = `
+                        <div class="flex flex-col items-center justify-center space-y-4 p-8 text-center">
+                          <div class="text-6xl">👨‍👩‍👧‍👦</div>
+                          <h3 class="text-2xl font-bold text-foreground">Família Brincando Juntos</h3>
+                          <p class="text-foreground/70">Pais e filhos se divertindo com o Método Brinca+</p>
+                          <div class="flex space-x-2">
+                            <span class="text-2xl">🎨</span>
+                            <span class="text-2xl">🧩</span>
+                            <span class="text-2xl">🎯</span>
+                            <span class="text-2xl">🌟</span>
+                          </div>
+                        </div>
+                      `;
+                    }
+                  }}
+                />
+                {/* Overlay com emoji */}
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
+                  <span className="text-2xl">👨‍👩‍👧‍👦</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
