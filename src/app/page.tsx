@@ -2,11 +2,15 @@
 
 // import { useRouter } from 'next/navigation';
 import Hero from '@/components/Hero';
+import Storytelling from '@/components/Storytelling';
+import ProblemTransformation from '@/components/ProblemTransformation';
 import Benefits from '@/components/Benefits';
+import CTAIntermediario from '@/components/CTAIntermediario';
 import Includes from '@/components/Includes';
 import HowItWorks from '@/components/HowItWorks';
 import Bonus from '@/components/Bonus';
 import SocialProof from '@/components/SocialProof';
+import MetricasVisuais from '@/components/MetricasVisuais';
 import CTA from '@/components/CTA';
 import Guarantee from '@/components/Guarantee';
 import FAQ from '@/components/FAQ';
@@ -32,11 +36,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Hero onCtaClick={handleCtaClick} />
+      <Storytelling />
+      <ProblemTransformation />
       <Benefits />
+      <CTAIntermediario onCtaClick={handleCtaClick} />
       <Includes />
       <HowItWorks />
       <Bonus />
       <SocialProof />
+      <MetricasVisuais />
       <CTA onCtaClick={handleCtaClick} />
       <Guarantee />
       <FAQ />

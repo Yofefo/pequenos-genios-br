@@ -22,14 +22,17 @@ export default function Bonus() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center space-x-2 bg-accent text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
             <Star className="w-4 h-4" />
-            <span>Oferta por tempo limitado</span>
+            <span>Presente de Lançamento 🎁</span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Bônus de Lançamento
+            Presente de Lançamento 🎁
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Materiais extras para maximizar o aprendizado e a diversão
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
+            Ao garantir seu acesso hoje, você ainda leva 10 brincadeiras extras + Planner semanal de brincadeiras.
           </p>
+          <div className="inline-flex items-center space-x-2 bg-red-100 text-red-700 px-6 py-3 rounded-full text-lg font-bold">
+            <span>⚠️ Disponível por tempo limitado!</span>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -71,4 +74,5 @@ export default function Bonus() {
     </section>
   );
 }
+
 

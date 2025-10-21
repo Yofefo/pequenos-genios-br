@@ -18,15 +18,14 @@ export default function Hero({ onCtaClick }: HeroProps) {
           <div className="space-y-8 max-w-4xl mx-auto">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
-                Projeto Pequenos Gênios —{' '}
+                Transforme o tédio em aprendizado com o{' '}
                 <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                  Método Brinca+
+                  Projeto Pequenos Gênios 🧠
                 </span>
               </h1>
               
               <p className="text-2xl lg:text-3xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Um guia visual com 30 brincadeiras inteligentes para desenvolver 
-                criatividade e raciocínio com itens simples do dia a dia.
+                30 brincadeiras inteligentes que estimulam a criatividade e reduzem o tempo de tela — usando o que você já tem em casa.
               </p>
             </div>
 
@@ -47,15 +46,29 @@ export default function Hero({ onCtaClick }: HeroProps) {
             </div>
 
             {/* CTA centralizado */}
-            <div className="flex justify-center">
-              <button
-                onClick={onCtaClick}
-                data-evt="cta-primary"
-                className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-12 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"
-              >
-                <span>Quero o Guia Agora</span>
-                <ArrowRight className="w-7 h-7" />
-              </button>
+            <div className="space-y-4">
+              <div className="flex justify-center">
+                <button
+                  onClick={onCtaClick}
+                  data-evt="cta-primary"
+                  className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-12 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"
+                >
+                  <span>Baixar o Guia Agora</span>
+                  <ArrowRight className="w-7 h-7" />
+                </button>
+              </div>
+              
+              {/* Linha de urgência */}
+              <p className="text-lg font-semibold text-accent">
+                🔥 Bônus de lançamento disponível só até 31/12/2024!
+              </p>
+              
+              {/* Badge de prova social */}
+              <div className="inline-flex items-center space-x-2 bg-secondary/10 px-6 py-3 rounded-full">
+                <span className="text-lg font-semibold text-foreground">
+                  🎉 Mais de 500 famílias já estão participando!
+                </span>
+              </div>
             </div>
           </div>
 

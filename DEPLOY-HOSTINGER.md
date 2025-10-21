@@ -144,3 +144,4 @@ Valor: seudominio.com
 - **Deploy:** Automático (Vercel)
 - **Manutenção:** Mínima
 
+

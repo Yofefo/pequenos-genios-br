@@ -10,11 +10,11 @@ export default function Guarantee() {
               <Shield className="w-10 h-10 text-green-600" />
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              7 dias de garantia
+              Garantia de 7 dias — sem risco!
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Se não amar o conteúdo, devolvemos 100% do valor em até 7 dias. 
-              <span className="font-semibold text-foreground"> Sem burocracia.</span>
+              Se o projeto não transformar a rotina do seu pequeno, devolvemos 100% do valor. 
+              <span className="font-semibold text-foreground"> Sem burocracia, sem perguntas.</span>
             </p>
           </div>
 
@@ -54,4 +54,5 @@ export default function Guarantee() {
     </section>
   );
 }
+
 

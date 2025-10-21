@@ -154,3 +154,4 @@ Após substituir as imagens, teste:
 
 **🎯 RESULTADO:** Landing page profissional e atrativa com imagens reais!
 
+

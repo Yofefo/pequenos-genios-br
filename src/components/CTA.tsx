@@ -10,20 +10,25 @@ export default function CTA({ onCtaClick }: CTAProps) {
       <div className="max-w-4xl mx-auto text-center">
         <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-2xl">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
-            Comece hoje por{' '}
-            <span className="text-primary">R$ 27,90</span>
+            Garanta o seu acesso com desconto de lançamento!
           </h2>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Acesso imediato ao Projeto Pequenos Gênios — Método Brinca+ + bônus de lançamento.
-          </p>
+          <div className="mb-8">
+            <div className="flex items-center justify-center space-x-4 mb-4">
+              <span className="text-2xl text-gray-500 line-through">De R$ 57,90</span>
+              <span className="text-4xl font-bold text-primary">Por apenas R$ 27,90</span>
+            </div>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              você recebe o guia completo + bônus exclusivos. Acesso imediato após a compra.
+            </p>
+          </div>
 
           <button
             onClick={onCtaClick}
             data-evt="cta-primary"
-            className="bg-primary hover:bg-blue-600 text-white px-12 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center space-x-3 mx-auto mb-8"
+            className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-12 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center space-x-3 mx-auto mb-8"
           >
-            <span>Quero o Guia Agora</span>
+            <span>Baixar Agora 🧠</span>
             <ArrowRight className="w-8 h-8" />
           </button>
 

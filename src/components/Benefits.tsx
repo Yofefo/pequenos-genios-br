@@ -3,33 +3,33 @@ import { Brain, Lightbulb, Heart, Users, Clock, Shield } from 'lucide-react';
 const benefits = [
   {
     icon: Brain,
-    title: "Estimula criatividade e solução de problemas",
-    description: "Desenvolve o pensamento criativo e a capacidade de resolver desafios"
+    title: "Seu filho aprende a resolver problemas brincando",
+    description: "Desenvolve o pensamento criativo e a capacidade de resolver desafios de forma natural e divertida"
   },
   {
     icon: Lightbulb,
-    title: "Brincadeiras prontas com passo a passo",
-    description: "Instruções claras e detalhadas para cada atividade"
+    title: "Diminui o tempo de tela sem conflito",
+    description: "Substitui telas por atividades que realmente engajam e desenvolvem seu pequeno"
   },
   {
     icon: Shield,
-    title: "Sem telas e sem materiais caros",
-    description: "Usa apenas itens simples que você já tem em casa"
+    title: "Economize com brinquedos caros",
+    description: "Usa apenas itens simples que você já tem em casa - sem gastos extras"
   },
   {
     icon: Heart,
-    title: "Fortalece vínculo entre adulto e criança",
-    description: "Momentos especiais de conexão e aprendizado conjunto"
+    title: "Fortalece a conexão entre pais e filhos",
+    description: "Momentos especiais de conexão e aprendizado conjunto que ficam para sempre"
   },
   {
     icon: Users,
-    title: "Pode ser usado com uma ou várias crianças",
-    description: "Adaptável para uso individual ou em grupo"
+    title: "Estimula criatividade e coordenação",
+    description: "Desenvolve habilidades motoras e cognitivas através de brincadeiras inteligentes"
   },
   {
     icon: Clock,
-    title: "Atividades rápidas e práticas",
-    description: "Perfeitas para o dia a dia corrido das famílias"
+    title: "Atividades práticas em menos de 15 minutos",
+    description: "Perfeitas para o dia a dia corrido das famílias - resultados rápidos e eficazes"
   }
 ];
 
@@ -70,4 +70,5 @@ export default function Benefits() {
     </section>
   );
 }
+
 

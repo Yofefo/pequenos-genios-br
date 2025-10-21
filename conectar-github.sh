@@ -32,3 +32,4 @@ echo ""
 echo "✅ PROJETO PRONTO PARA CONECTAR!"
 echo "📱 Siga os passos acima"
 
+

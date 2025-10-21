@@ -2,33 +2,33 @@ import { Download, Target, Home, Play, RotateCcw } from 'lucide-react';
 
 const steps = [
   {
-    number: "01",
-    icon: Download,
-    title: "Baixe o PDF imediatamente",
-    description: "Após a compra, você recebe o link por e-mail ou WhatsApp"
-  },
-  {
-    number: "02", 
+    number: "1",
     icon: Target,
-    title: "Escolha uma brincadeira (10–15 min)",
+    title: "1️⃣ Escolha uma brincadeira",
     description: "Selecione a atividade ideal para o momento e a idade da criança"
   },
   {
-    number: "03",
+    number: "2", 
     icon: Home,
-    title: "Use materiais simples que você já tem",
+    title: "2️⃣ Separe o que já tem em casa",
     description: "Papel, canetas, objetos do dia a dia - nada de compras especiais"
   },
   {
-    number: "04",
+    number: "3",
     icon: Play,
-    title: "Siga o passo a passo do Método Brinca+",
+    title: "3️⃣ Siga o passo a passo do Método Brinca+",
     description: "Instruções claras e detalhadas para cada atividade"
   },
   {
-    number: "05",
+    number: "4",
+    icon: Download,
+    title: "4️⃣ Observe o aprendizado acontecer",
+    description: "Veja como seu filho desenvolve habilidades e se diverte aprendendo"
+  },
+  {
+    number: "5",
     icon: RotateCcw,
-    title: "Repita sempre que quiser",
+    title: "5️⃣ Repita sempre que quiser 🎉",
     description: "Há variações por idade para manter o interesse sempre renovado"
   }
 ];
@@ -78,4 +78,5 @@ export default function HowItWorks() {
     </section>
   );
 }
+
 

@@ -53,3 +53,4 @@ echo ""
 echo "✅ REDIRECIONAMENTO CONFIGURADO!"
 echo "📱 Acesse http://localhost:3000 para testar"
 
+

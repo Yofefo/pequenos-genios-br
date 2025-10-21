@@ -22,6 +22,20 @@ const testimonials = [
     content: "Virou nosso ritual do fim de tarde. Meu filho sempre pergunta qual brincadeira vamos fazer hoje!",
     rating: 5,
     avatar: "AF"
+  },
+  {
+    name: "Carla M.",
+    role: "Mãe",
+    content: "Economizei muito em brinquedos! Meu filho prefere essas brincadeiras do que os brinquedos caros.",
+    rating: 5,
+    avatar: "CM"
+  },
+  {
+    name: "Prof. Ana",
+    role: "Professora",
+    content: "Transformou minha sala de aula. As crianças ficam mais criativas e menos dependentes de telas.",
+    rating: 5,
+    avatar: "PA"
   }
 ];
 
@@ -31,11 +45,21 @@ export default function SocialProof() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Pais e professores aprovam
+            Pais e professores aprovam!
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Veja o que quem já usa o Método Brinca+ tem a dizer
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+            Mais de 500 famílias transformando o tédio em aprendizado.
           </p>
+          <div className="inline-flex items-center space-x-2 bg-secondary/10 px-6 py-3 rounded-full">
+            <div className="flex items-center space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 text-secondary fill-current" />
+              ))}
+            </div>
+            <span className="text-lg font-semibold text-foreground">
+              ⭐️⭐️⭐️⭐️⭐️ Avaliação média: 5.0
+            </span>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

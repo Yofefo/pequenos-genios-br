@@ -42,3 +42,4 @@ echo ""
 
 echo "✅ Estrutura pronta! Agora adicione suas imagens!"
 
+

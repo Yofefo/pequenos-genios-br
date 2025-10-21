@@ -41,3 +41,4 @@ echo "📱 Acesse http://localhost:3000 para ver o resultado"
 echo ""
 echo "✅ VERIFICAÇÃO CONCLUÍDA!"
 
+
