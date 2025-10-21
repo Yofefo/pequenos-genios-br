@@ -40,3 +40,4 @@ echo "✅ PROJETO PRONTO PARA DEPLOY!"
 echo "📱 Siga os passos acima"
 
 
+

@@ -8,6 +8,18 @@ interface HeroProps {
 }
 
 export default function Hero({ onCtaClick }: HeroProps) {
+  // Data dinâmica para o bônus (sempre hoje + 7 dias)
+  const getBonusDate = () => {
+    const today = new Date();
+    const bonusDate = new Date(today);
+    bonusDate.setDate(today.getDate() + 7);
+    return bonusDate.toLocaleDateString('pt-BR', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric'
+    });
+  };
+
   return (
     <section className="bg-background py-16 px-4">
       <div className="max-w-6xl mx-auto">
@@ -62,7 +74,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
               
               {/* Linha de urgência */}
               <p className="text-lg font-semibold text-accent">
-                🔥 Bônus de lançamento disponível só até 31/12/2024!
+                🔥 Bônus de lançamento disponível só até {getBonusDate()}!
               </p>
               
               {/* Badge de prova social */}

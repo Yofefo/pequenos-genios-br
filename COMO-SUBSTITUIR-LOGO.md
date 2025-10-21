@@ -85,3 +85,4 @@ cp sua-logo.png public/images/logo.png
 **🎯 RESULTADO:** Logo personalizada no topo da landing page! 🚀
 
 
+

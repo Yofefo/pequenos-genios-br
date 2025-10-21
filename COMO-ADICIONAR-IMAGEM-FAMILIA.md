@@ -38,3 +38,4 @@ Se a imagem não carregar, será exibido um placeholder visual com:
 - Emoji de família 👨‍👩‍👧‍👦
 - Título "Família Brincando Juntos"
 - Emojis de atividades 🎨🧩🎯🌟
+
