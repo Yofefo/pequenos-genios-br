@@ -2,8 +2,22 @@
 
 import Link from 'next/link';
 import { ArrowLeft, CreditCard, Shield } from 'lucide-react';
+import { trackEvent } from '@/lib/pixel';
 
 export default function CheckoutPage() {
+  const handlePurchaseClick = () => {
+    // Rastrear evento de início de compra
+    trackEvent('InitiateCheckout', {
+      content_name: 'Projeto Pequenos Gênios - Método Brinca+',
+      content_category: 'Digital Product',
+      value: 27.90,
+      currency: 'BRL'
+    });
+    
+    // Redirecionar para o gateway de pagamento
+    window.open('https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background py-16 px-4">
       <div className="max-w-2xl mx-auto">
@@ -52,7 +66,7 @@ export default function CheckoutPage() {
 
           {/* Botão de pagamento */}
           <button 
-            onClick={() => window.open('https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f', '_blank')}
+            onClick={handlePurchaseClick}
             className="w-full bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-2xl text-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl mb-6"
           >
             Finalizar Compra

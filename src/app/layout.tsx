@@ -39,6 +39,27 @@ export default function RootLayout({
       <body className="antialiased">
         <MetaPixel />
         {children}
+        
+        {/* Script de Rastreamento Kirvano */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.onload = (event) => {
+                const links = document.querySelectorAll("a");
+                links.forEach(function (link) {
+                  const href = link.href;
+                  if (href !== null || href !== "") {
+                    if (href.includes("kirvano")) {
+                      let search_params = document.location.search.replace("?", "");
+                      let urlFinal = href + (href.indexOf("?") > 0 ? "&" : "?") + search_params.toString();
+                      link.href = urlFinal;
+                    }
+                  }
+                });
+              };
+            `,
+          }}
+        />
       </body>
     </html>
   );

@@ -2,12 +2,12 @@
 
 import { useEffect } from 'react';
 
-// TODO: Substitua pelo seu Meta Pixel ID
-const META_PIXEL_ID = 'YOUR_PIXEL_ID_HERE';
+// Meta Pixel ID fornecido
+const META_PIXEL_ID = '1397143025087613';
 
 export function MetaPixel() {
   useEffect(() => {
-    if (typeof window !== 'undefined' && META_PIXEL_ID !== 'YOUR_PIXEL_ID_HERE') {
+    if (typeof window !== 'undefined' && META_PIXEL_ID) {
       // Carrega o script do Meta Pixel
       const script = document.createElement('script');
       script.innerHTML = `
@@ -23,6 +23,16 @@ export function MetaPixel() {
         fbq('track', 'PageView');
       `;
       document.head.appendChild(script);
+      
+      // Adicionar noscript para Meta Pixel
+      const noscript = document.createElement('noscript');
+      const img = document.createElement('img');
+      img.height = '1';
+      img.width = '1';
+      img.style.display = 'none';
+      img.src = `https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`;
+      noscript.appendChild(img);
+      document.body.appendChild(noscript);
     }
   }, []);
 
