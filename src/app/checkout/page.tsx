@@ -10,7 +10,7 @@ export default function CheckoutPage() {
     trackEvent('InitiateCheckout', {
       content_name: 'Projeto Pequenos Gênios - Método Brinca+',
       content_category: 'Digital Product',
-      value: 27.90,
+      value: 14.90,
       currency: 'BRL'
     });
     
@@ -59,7 +59,7 @@ export default function CheckoutPage() {
             <div className="mt-4 pt-4 border-t border-gray-200">
               <div className="flex justify-between items-center">
                 <span className="text-lg font-semibold">Total:</span>
-                <span className="text-2xl font-bold text-primary">R$ 27,90</span>
+                <span className="text-2xl font-bold text-primary">R$ 14,90</span>
               </div>
             </div>
           </div>

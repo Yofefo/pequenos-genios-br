@@ -25,7 +25,7 @@ export default function Home() {
     trackEvent('Lead', {
       content_name: 'Projeto Pequenos Gênios - Método Brinca+',
       content_category: 'Digital Product',
-      value: 27.90,
+      value: 14.90,
       currency: 'BRL'
     });
     

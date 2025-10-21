@@ -16,8 +16,8 @@ export default function CTA({ onCtaClick }: CTAProps) {
           
           <div className="mb-8">
             <div className="flex items-center justify-center space-x-4 mb-4">
-              <span className="text-2xl text-gray-500 line-through">De R$ 57,90</span>
-              <span className="text-4xl font-bold text-primary">Por apenas R$ 27,90</span>
+              <span className="text-2xl text-gray-500 line-through">De R$ 29,90</span>
+              <span className="text-4xl font-bold text-primary">Por apenas R$ 14,90</span>
             </div>
             <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
               você recebe o guia completo + bônus exclusivos. Acesso imediato após a compra.
