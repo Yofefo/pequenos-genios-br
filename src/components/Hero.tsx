@@ -13,50 +13,54 @@ export default function Hero({ onCtaClick }: HeroProps) {
         {/* Logo */}
         <Logo />
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Conteúdo principal */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
+        <div className="text-center space-y-12">
+          {/* Conteúdo principal centralizado */}
+          <div className="space-y-8 max-w-4xl mx-auto">
+            <div className="space-y-6">
+              <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
                 Projeto Pequenos Gênios —{' '}
-                <span className="text-primary">Método Brinca+</span>
+                <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  Método Brinca+
+                </span>
               </h1>
               
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-2xl lg:text-3xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
                 Um guia visual com 30 brincadeiras inteligentes para desenvolver 
                 criatividade e raciocínio com itens simples do dia a dia.
               </p>
             </div>
 
-            {/* Bullets rápidos */}
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-lg">Atividades de 10–15 min</span>
+            {/* Bullets rápidos centralizados */}
+            <div className="space-y-4 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <span className="text-xl font-medium">Atividades de 10–15 min</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-lg">Zero materiais caros</span>
+              <div className="flex items-center justify-center space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <span className="text-xl font-medium">Zero materiais caros</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-lg">Ideal para pais e professores (3–8 anos)</span>
+              <div className="flex items-center justify-center space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <span className="text-xl font-medium">Ideal para pais e professores (3–8 anos)</span>
               </div>
             </div>
 
-            {/* CTA */}
-            <button
-              onClick={onCtaClick}
-              data-evt="cta-primary"
-              className="bg-primary hover:bg-blue-600 text-white px-8 py-4 rounded-2xl text-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2"
-            >
-              <span>Quero o Guia Agora</span>
-              <ArrowRight className="w-6 h-6" />
-            </button>
+            {/* CTA centralizado */}
+            <div className="flex justify-center">
+              <button
+                onClick={onCtaClick}
+                data-evt="cta-primary"
+                className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-12 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"
+              >
+                <span>Quero o Guia Agora</span>
+                <ArrowRight className="w-7 h-7" />
+              </button>
+            </div>
           </div>
 
-          {/* Mockup */}
-          <div className="relative max-w-md mx-auto lg:mx-0">
+          {/* Mockup centralizado */}
+          <div className="relative max-w-md mx-auto">
             {/* Mockup principal - Capa do PDF */}
             <div className="bg-white rounded-2xl shadow-2xl p-6 transform rotate-3 hover:rotate-0 transition-transform duration-300 relative z-10">
               <div className="rounded-lg overflow-hidden">

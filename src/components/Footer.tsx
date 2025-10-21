@@ -59,9 +59,8 @@ export default function Footer() {
               Contato
             </h4>
             <div className="space-y-2 text-gray-300">
-              <p>E-mail: contato@pequenosgenios.com</p>
-              <p>WhatsApp: (11) 99999-9999</p>
-              <p>Instagram: @pequenosgenios</p>
+              <p>E-mail: suporte@pequenosgenios.fun</p>
+              <p>Instagram: @projeto.pequenosgenios</p>
             </div>
           </div>
         </div>
