@@ -27,8 +27,8 @@ export function MetaPixel() {
       // Adicionar noscript para Meta Pixel
       const noscript = document.createElement('noscript');
       const img = document.createElement('img');
-      img.height = '1';
-      img.width = '1';
+      img.height = 1;
+      img.width = 1;
       img.style.display = 'none';
       img.src = `https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`;
       noscript.appendChild(img);
