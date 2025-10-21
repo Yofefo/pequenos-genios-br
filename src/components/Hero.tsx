@@ -59,16 +59,16 @@ export default function Hero({ onCtaClick }: HeroProps) {
             </div>
           </div>
 
-          {/* Mockup centralizado */}
-          <div className="relative max-w-md mx-auto">
+          {/* Mockup harmonioso */}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 max-w-4xl mx-auto">
             {/* Mockup principal - Capa do PDF */}
-            <div className="bg-white rounded-2xl shadow-2xl p-6 transform rotate-3 hover:rotate-0 transition-transform duration-300 relative z-10">
+            <div className="bg-white rounded-2xl shadow-2xl p-6 transform rotate-1 hover:rotate-0 transition-transform duration-300 flex-shrink-0">
               <div className="rounded-lg overflow-hidden">
                 <Image
                   src="/images/hero/cover.png"
                   alt="Capa do PDF - Projeto Pequenos Gênios"
-                  width={400}
-                  height={300}
+                  width={350}
+                  height={260}
                   className="w-full h-auto object-contain"
                   priority
                 />
@@ -76,13 +76,13 @@ export default function Hero({ onCtaClick }: HeroProps) {
             </div>
             
             {/* Mockup secundário - Crianças brincando */}
-            <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-2xl p-4 transform -rotate-3 hover:rotate-0 transition-transform duration-300 z-20">
+            <div className="bg-white rounded-2xl shadow-2xl p-4 transform -rotate-1 hover:rotate-0 transition-transform duration-300 flex-shrink-0">
               <div className="rounded-lg overflow-hidden">
                 <Image
                   src="/images/hero/kids-playing.png"
                   alt="Crianças brincando com o Método Brinca+"
-                  width={200}
-                  height={150}
+                  width={250}
+                  height={190}
                   className="w-full h-auto object-contain"
                 />
               </div>
