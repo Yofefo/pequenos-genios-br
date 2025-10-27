@@ -78,11 +78,13 @@ export default function UpsellPage() {
 
   const handleAcceptClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    console.log('Botão ACEITAR clicado!', ACCEPT);
     hardNav(ACCEPT);
   };
 
   const handleRefuseClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    console.log('Botão RECUSAR clicado!', DECLINE);
     hardNav(DECLINE);
   };
 
@@ -781,7 +783,7 @@ export default function UpsellPage() {
                 href={ACCEPT}
                 rel="external noopener"
                 onClick={handleAcceptClick}
-                className="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
+                className="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center cursor-pointer pointer-events-auto"
               >
                 SIM, quero noites mais tranquilas
               </a>
@@ -790,7 +792,7 @@ export default function UpsellPage() {
                 href={DECLINE}
                 rel="external noopener"
                 onClick={handleRefuseClick}
-                className="text-gray-600 hover:text-gray-800 underline text-sm cursor-pointer"
+                className="text-gray-600 hover:text-gray-800 underline text-sm cursor-pointer pointer-events-auto"
               >
                 Não, obrigado — vou seguir sem o relaxamento
               </a>
@@ -909,7 +911,7 @@ export default function UpsellPage() {
               href={ACCEPT}
               rel="external noopener"
               onClick={handleAcceptClick}
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto flex items-center justify-center"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto flex items-center justify-center cursor-pointer pointer-events-auto"
             >
               SIM, quero noites mais tranquilas
             </a>
@@ -918,7 +920,7 @@ export default function UpsellPage() {
               href={DECLINE}
               rel="external noopener"
               onClick={handleRefuseClick}
-              className="text-white/80 hover:text-white underline text-lg cursor-pointer block mx-auto"
+              className="text-white/80 hover:text-white underline text-lg cursor-pointer pointer-events-auto block mx-auto"
             >
               Não, prefiro seguir sem o relaxamento
             </a>
@@ -940,7 +942,7 @@ export default function UpsellPage() {
               href={ACCEPT}
               rel="external noopener"
               onClick={handleAcceptClick}
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors min-w-[60px]"
+              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors min-w-[60px] cursor-pointer pointer-events-auto"
             >
               SIM
             </a>
@@ -948,7 +950,7 @@ export default function UpsellPage() {
               href={DECLINE}
               rel="external noopener"
               onClick={handleRefuseClick}
-              className="text-white/80 hover:text-white underline text-sm transition-colors"
+              className="text-white/80 hover:text-white underline text-sm transition-colors cursor-pointer pointer-events-auto"
             >
               Não
             </a>
