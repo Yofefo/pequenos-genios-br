@@ -31,10 +31,10 @@ export default function DownsellPage() {
 
   const handleAcceptClick = () => {
     // Inicializar CartPanda antes de redirecionar
-    if (window.CartPandaOcuExternal && !window.ocuExternalInitialized) {
+    if ((window as any).CartPandaOcuExternal && !(window as any).ocuExternalInitialized) {
       try {
-        new window.CartPandaOcuExternal();
-        window.ocuExternalInitialized = true;
+        new (window as any).CartPandaOcuExternal();
+        (window as any).ocuExternalInitialized = true;
       } catch (error) {
         console.log('Erro ao inicializar CartPanda:', error);
       }
@@ -46,10 +46,10 @@ export default function DownsellPage() {
 
   const handleRefuseClick = () => {
     // Inicializar CartPanda antes de redirecionar
-    if (window.CartPandaOcuExternal && !window.ocuExternalInitialized) {
+    if ((window as any).CartPandaOcuExternal && !(window as any).ocuExternalInitialized) {
       try {
-        new window.CartPandaOcuExternal();
-        window.ocuExternalInitialized = true;
+        new (window as any).CartPandaOcuExternal();
+        (window as any).ocuExternalInitialized = true;
       } catch (error) {
         console.log('Erro ao inicializar CartPanda:', error);
       }
