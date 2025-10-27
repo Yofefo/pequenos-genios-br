@@ -29,42 +29,20 @@ export default function DownsellPage() {
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const handleAcceptClick = () => {
-    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
+  const handleAcceptClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const url = '/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
+    window.location.assign(url);
   };
 
-  const handleRefuseClick = () => {
-    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
+  const handleRefuseClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const url = '/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
+    window.location.assign(url);
   };
 
   return (
     <>
-      {/* Script CartPanda com controle de inicialização */}
-      <head>
-        <script
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js">
-        </script>
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Aguardar carregamento completo antes de inicializar
-              document.addEventListener('DOMContentLoaded', function() {
-                setTimeout(function() {
-                  if (typeof OcuExternal !== 'undefined') {
-                    try {
-                      new OcuExternal();
-                    } catch (error) {
-                      console.log('OcuExternal já inicializado:', error);
-                    }
-                  }
-                }, 2000); // Delay maior para garantir que a página carregou
-              });
-            `,
-          }}
-        />
-      </head>
-      
       <div className="min-h-screen bg-background">
       {/* Disclaimer Impactante */}
       <div className="bg-red-600 py-3 px-4 relative overflow-hidden">
@@ -127,6 +105,7 @@ export default function DownsellPage() {
                 <div className="flex justify-center mb-6">
                   <Button
                     onClick={handleAcceptClick}
+                    href="/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes"
                     size="lg"
                     className="bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-2xl text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-2"
                   >
@@ -261,6 +240,7 @@ export default function DownsellPage() {
           <div className="flex space-x-2">
             <Button
               onClick={handleAcceptClick}
+              href="/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes"
               size="sm"
               className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold"
             >

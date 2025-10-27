@@ -64,42 +64,20 @@ export default function UpsellPage() {
   };
 
 
-  const handleAcceptClick = () => {
-    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
+  const handleAcceptClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const url = '/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
+    window.location.assign(url);
   };
 
-  const handleRefuseClick = () => {
-    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
+  const handleRefuseClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const url = '/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
+    window.location.assign(url);
   };
 
   return (
     <>
-      {/* Script CartPanda com controle de inicialização */}
-      <head>
-        <script
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js">
-        </script>
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Aguardar carregamento completo antes de inicializar
-              document.addEventListener('DOMContentLoaded', function() {
-                setTimeout(function() {
-                  if (typeof OcuExternal !== 'undefined') {
-                    try {
-                      new OcuExternal();
-                    } catch (error) {
-                      console.log('OcuExternal já inicializado:', error);
-                    }
-                  }
-                }, 2000); // Delay maior para garantir que a página carregou
-              });
-            `,
-          }}
-        />
-      </head>
-      
       <div className="min-h-screen bg-background">
       {/* Disclaimer Impactante */}
       <div className="bg-red-600 py-3 px-4 relative overflow-hidden">
@@ -791,6 +769,7 @@ export default function UpsellPage() {
             <div className="space-y-4">
               <Button
                 onClick={handleAcceptClick}
+                href="/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes"
                 size="lg"
                 className="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
@@ -916,6 +895,7 @@ export default function UpsellPage() {
           <div className="space-y-6">
             <Button
               onClick={handleAcceptClick}
+              href="/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes"
               size="lg"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto"
             >
