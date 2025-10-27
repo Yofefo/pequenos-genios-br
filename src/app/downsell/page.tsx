@@ -30,8 +30,7 @@ export default function DownsellPage() {
   };
 
   const handleAcceptClick = () => {
-    // Redirecionar para página de obrigado até CartPanda ser configurado
-    window.location.href = '/obrigado';
+    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
   };
 
   const handleRefuseClick = () => {

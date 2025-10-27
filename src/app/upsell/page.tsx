@@ -64,34 +64,8 @@ export default function UpsellPage() {
   };
 
 
-  const testEndpoint = async (url: string) => {
-    try {
-      const response = await fetch(url, { method: 'HEAD' });
-      return response.ok;
-    } catch {
-      return false;
-    }
-  };
-
-  const handleAcceptClick = async () => {
-    const endpoints = [
-      'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes',
-      'https://peskdigitalbusiness.mycartpanda.com/ocu/next-offer/PZYWAAO2vk?accepted=yes',
-      'https://peskdigitalbusiness.mycartpanda.com/upsell/PZYWAAO2vk?accepted=yes',
-      'https://peskdigitalbusiness.mycartpanda.com/checkout/upsell/PZYWAAO2vk?accepted=yes'
-    ];
-    
-    // Testar endpoints
-    for (const endpoint of endpoints) {
-      const isValid = await testEndpoint(endpoint);
-      if (isValid) {
-        window.location.href = endpoint;
-        return;
-      }
-    }
-    
-    // Se nenhum funcionar, ir para obrigado
-    window.location.href = '/obrigado';
+  const handleAcceptClick = () => {
+    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
   };
 
   const handleRefuseClick = () => {
