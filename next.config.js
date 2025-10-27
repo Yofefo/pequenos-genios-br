@@ -135,16 +135,12 @@ const nextConfig = {
     return config;
   },
   
-  // PWA básico + Proxy CartPanda
+  // PWA básico
   async rewrites() {
     return [
       {
         source: '/sw.js',
         destination: '/_next/static/sw.js'
-      },
-      {
-        source: '/ex-ocu/:path*',
-        destination: 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/:path*',
       }
     ]
   }

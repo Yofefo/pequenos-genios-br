@@ -64,21 +64,23 @@ export default function UpsellPage() {
   };
 
 
-  const base = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk';
+  // Substitua pelos links copiados no admin da CartPanda (dessa oferta/funil)
+  const ACCEPT = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
+  const DECLINE = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
 
-  const go = (url: string) => {
-    // força navegação hard (não deixa o Next interceptar)
-    window.location.assign(url);
+  const hardNav = (url: string) => {
+    // Evita o router do Next e garante envio dos cookies da CartPanda
+    window.top.location.href = url;
   };
 
   const handleAcceptClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    go(`${base}?accepted=yes`);
+    hardNav(ACCEPT);
   };
 
   const handleRefuseClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    go(`${base}?accepted=no`);
+    hardNav(DECLINE);
   };
 
   return (
@@ -773,8 +775,8 @@ export default function UpsellPage() {
             
             <div className="space-y-4">
               <a
-                href={`${base}?accepted=yes`}
-                rel="external"
+                href={ACCEPT}
+                rel="external noopener"
                 onClick={handleAcceptClick}
                 className="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
               >
@@ -782,8 +784,8 @@ export default function UpsellPage() {
               </a>
               
               <a
-                href={`${base}?accepted=no`}
-                rel="external"
+                href={DECLINE}
+                rel="external noopener"
                 onClick={handleRefuseClick}
                 className="text-gray-600 hover:text-gray-800 underline text-sm cursor-pointer"
               >
@@ -901,8 +903,8 @@ export default function UpsellPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-6">
             <a
-              href={`${base}?accepted=yes`}
-              rel="external"
+              href={ACCEPT}
+              rel="external noopener"
               onClick={handleAcceptClick}
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto flex items-center justify-center"
             >
@@ -910,8 +912,8 @@ export default function UpsellPage() {
             </a>
             
             <a
-              href={`${base}?accepted=no`}
-              rel="external"
+              href={DECLINE}
+              rel="external noopener"
               onClick={handleRefuseClick}
               className="text-white/80 hover:text-white underline text-lg cursor-pointer block mx-auto"
             >
@@ -932,16 +934,16 @@ export default function UpsellPage() {
           </div>
           <div className="flex space-x-2">
             <a
-              href={`${base}?accepted=yes`}
-              rel="external"
+              href={ACCEPT}
+              rel="external noopener"
               onClick={handleAcceptClick}
               className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors min-w-[60px]"
             >
               SIM
             </a>
             <a
-              href={`${base}?accepted=no`}
-              rel="external"
+              href={DECLINE}
+              rel="external noopener"
               onClick={handleRefuseClick}
               className="text-white/80 hover:text-white underline text-sm transition-colors"
             >
