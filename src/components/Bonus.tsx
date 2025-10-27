@@ -5,14 +5,14 @@ import { Badge } from '@/components/ui/badge';
 const bonuses = [
   {
     icon: Gift,
-    title: "10 brincadeiras extra de 5 minutos",
+    title: "10 brincadeiras extras de 5 minutos",
     description: "PDF 'SOS Tédio' para momentos de emergência",
     highlight: "Perfeito para quando a criança está entediada"
   },
   {
     icon: Calendar,
     title: "Planner semanal de brincadeiras",
-    description: "Organize a semana com atividades planejadas",
+    description: "Organize a semana com atividades divertidas e educativas",
     highlight: "Imprimível e personalizável"
   }
 ];
@@ -30,7 +30,7 @@ export default function Bonus() {
             Presente de Lançamento 🎁
           </h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto mb-4">
-            Ao garantir seu acesso hoje, você ainda leva 10 brincadeiras extras + Planner semanal de brincadeiras.
+            Ao garantir seu acesso hoje, você ainda leva 10 brincadeiras extras + Planner Semanal de Brincadeiras.
           </p>
           <Badge variant="destructive" className="px-6 py-3 rounded-full text-lg font-bold">
             ⚠️ Disponível por tempo limitado!

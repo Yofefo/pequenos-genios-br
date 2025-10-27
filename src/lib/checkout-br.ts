@@ -13,9 +13,9 @@ export const CHECKOUT_CONFIG = {
   
   // Preços em reais (exemplo - ajustar conforme necessário)
   prices: {
-    primary: 29.90, // R$ 29,90
+    primary: 14.90, // R$ 14,90
     upsell: 19.90,  // R$ 19,90
-    original: 49.90  // R$ 49,90
+    original: 29.90  // R$ 29,90
   },
   
   // Configurações de tracking

@@ -6,33 +6,33 @@ import { useState, useEffect } from 'react';
 const benefits = [
   {
     icon: Brain,
-    title: "O seu filho aprende a resolver problemas a brincar",
-    description: "Desenvolve o pensamento criativo e a capacidade de resolver desafios de forma natural e divertida"
+    title: "Aprende a resolver problemas brincando",
+    description: "Estimula o raciocínio criativo e a capacidade de resolver desafios de forma leve e divertida"
   },
   {
     icon: Lightbulb,
-    title: "Diminui o tempo de ecrã sem conflito",
-    description: "Substitui ecrãs por actividades que realmente envolvem e desenvolvem o seu pequeno"
+    title: "Reduz o tempo de tela sem conflito",
+    description: "Troque as telas por atividades que envolvem e desenvolvem seu pequeno de verdade"
   },
   {
     icon: Shield,
-    title: "Poupe com brinquedos caros",
-    description: "Usa apenas itens simples que já tem em casa - sem gastos extras"
+    title: "Economize com brinquedos caros",
+    description: "Use apenas materiais simples que já tem em casa — sem gastos extras"
   },
   {
     icon: Heart,
-    title: "Fortalecer a ligação entre pais e filhos",
-    description: "Momentos especiais de ligação e aprendizagem conjunta que ficam para sempre"
+    title: "Fortaleça o vínculo entre pais e filhos",
+    description: "Momentos especiais de conexão e aprendizado conjunto que ficam pra sempre"
   },
   {
     icon: Users,
-    title: "Estimula criatividade e coordenação",
-    description: "Desenvolve capacidades motoras e cognitivas através de brincadeiras inteligentes"
+    title: "Estimula a criatividade e coordenação",
+    description: "Desenvolve habilidades motoras e cognitivas com brincadeiras inteligentes"
   },
   {
     icon: Clock,
-    title: "Actividades práticas em menos de 15 minutos",
-    description: "Perfeitas para o dia a dia corrido das famílias - resultados rápidos e eficazes"
+    title: "Atividades práticas em menos de 15 minutos",
+    description: "Perfeitas para a rotina corrida — rápidas, leves e com resultado real"
   }
 ];
 
@@ -72,7 +72,7 @@ export default function Benefits() {
         <div className="mb-16">
           <div className="relative bg-white rounded-2xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-center text-foreground mb-8">
-              Algumas das actividades que o seu filho irá fazer
+              Algumas das atividades que seu filho vai fazer
             </h3>
             
             <div className="relative overflow-hidden rounded-xl">
@@ -144,10 +144,10 @@ export default function Benefits() {
 
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            O que o seu filho/aluno ganha
+            O que o seu filho ou aluno ganha
           </h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            Desenvolva capacidades essenciais de forma divertida e natural
+            Desenvolva habilidades essenciais de forma divertida e natural
           </p>
         </div>
 

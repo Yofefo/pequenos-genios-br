@@ -68,10 +68,10 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
           <p className="mb-4">
-            Cada brincadeira é uma oportunidade de aprendizado. Dê esse presente pro seu pequeno.
+            Cada brincadeira é uma oportunidade de aprendizado. Dê esse presente ao seu pequeno.
           </p>
           <p>
-            Desenvolvido com ❤️ para o desenvolvimento das crianças
+            Desenvolvido com ❤️ para inspirar o desenvolvimento das crianças
           </p>
         </div>
       </div>

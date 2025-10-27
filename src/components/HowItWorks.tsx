@@ -10,26 +10,26 @@ const steps = [
   {
     number: "2", 
     icon: Home,
-    title: "2️⃣ Separe o que já tem em casa",
-    description: "Papel, canetas, objetos do dia a dia - nada de compras especiais"
+    title: "2️⃣ Use o que já tem em casa",
+    description: "Papel, canetas, tampas, potes… nada de comprar coisas novas"
   },
   {
     number: "3",
     icon: Play,
     title: "3️⃣ Siga o passo a passo do Método Brinca+",
-    description: "Instruções claras e detalhadas para cada atividade"
+    description: "Instruções claras e divertidas para cada brincadeira"
   },
   {
     number: "4",
     icon: Download,
-    title: "4️⃣ Observe o aprendizado acontecer",
-    description: "Veja como seu filho desenvolve habilidades e se diverte aprendendo"
+    title: "4️⃣ Veja o aprendizado acontecer",
+    description: "Acompanhe o desenvolvimento e a alegria do seu filho aprendendo"
   },
   {
     number: "5",
     icon: RotateCcw,
     title: "5️⃣ Repita sempre que quiser 🎉",
-    description: "Há variações por idade para manter o interesse sempre renovado"
+    description: "Há variações por idade para manter o interesse e a diversão sempre vivos"
   }
 ];
 
@@ -42,7 +42,7 @@ export default function HowItWorks() {
             Como funciona
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Simples, prático e eficaz - em apenas 5 passos
+            Simples, prático e eficaz — em apenas 5 passos
           </p>
         </div>
 

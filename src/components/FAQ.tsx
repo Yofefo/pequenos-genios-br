@@ -5,27 +5,27 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqs = [
   {
     question: "Preciso de materiais especiais?",
-    answer: "Não. As brincadeiras usam itens simples e comuns de casa como papel, canetas, objectos do dia a dia e materiais recicláveis."
+    answer: "Não. As brincadeiras usam itens simples que você já tem em casa: papel, canetas, potes, tampas, materiais recicláveis."
   },
   {
     question: "Para que idade serve?",
-    answer: "Recomendado para 3–8 anos, com variações por faixa etária. Cada actividade tem adaptações específicas para diferentes idades."
+    answer: "Recomendado para crianças de 3 a 8 anos, com variações por faixa etária. Cada atividade tem adaptações específicas."
   },
   {
-    question: "Quanto tempo demora?",
-    answer: "A maioria demora 10–15 minutos. Há extras de 5 minutos para momentos mais rápidos. Perfeito para o dia a dia corrido das famílias."
+    question: "Quanto tempo leva cada atividade?",
+    answer: "A maioria dura entre 10 e 15 minutos. Há extras de 5 minutos para momentos mais rápidos. Ideal para o dia a dia."
   },
   {
-    question: "Posso usar com várias crianças?",
-    answer: "Sim. Serve para 1 ou mais crianças. As actividades são adaptáveis para uso individual ou em grupo, ideal para famílias e professores."
+    question: "Posso usar com mais de uma criança?",
+    answer: "Sim! As atividades funcionam individualmente ou em grupo — perfeitas para irmãos ou turmas de escola."
   },
   {
-    question: "Como recebo?",
-    answer: "Após a compra, recebe o link por e-mail/WhatsApp para descarregar o PDF. Acesso imediato e vitalício ao material."
+    question: "Como recebo o material?",
+    answer: "Assim que finalizar a compra, você recebe o link no e-mail e no WhatsApp para baixar o PDF imediatamente."
   },
   {
     question: "Posso imprimir quantas vezes quiser?",
-    answer: "Sim! O material é seu após a compra. Pode ser reimpresso e usado com quantas crianças quiser (desde que não seja revendido)."
+    answer: "Sim! O material é seu. Pode imprimir e usar quantas vezes quiser — só não é permitido revender."
   }
 ];
 
@@ -38,7 +38,7 @@ export default function FAQ() {
             Perguntas frequentes
           </h2>
           <p className="text-xl text-foreground/80">
-            Tire as suas dúvidas sobre o Método Brinca+
+            Tire suas dúvidas sobre o Método Brinca+
           </p>
         </div>
 

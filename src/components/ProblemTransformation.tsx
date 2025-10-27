@@ -9,7 +9,7 @@ export default function ProblemTransformation() {
             O problema de hoje
           </h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            Crianças cada vez mais dependentes de ecrãs, pais sem tempo e brinquedos cada vez mais caros.
+            Crianças cada vez mais presas às telas, pais sem tempo e brinquedos cada vez mais caros.
           </p>
         </div>
 
@@ -40,10 +40,10 @@ export default function ProblemTransformation() {
               
               <div className="space-y-3 text-foreground/70">
                 <p className="text-lg">• Tédio constante</p>
-                <p className="text-lg">• Dependência de ecrãs</p>
+                <p className="text-lg">• Dependência de telas</p>
                 <p className="text-lg">• Brinquedos caros</p>
                 <p className="text-lg">• Pouco aprendizado real</p>
-                <p className="text-lg">• Distrações constantes</p>
+                <p className="text-lg">• Distrações o tempo todo</p>
               </div>
             </div>
           </div>
@@ -74,8 +74,8 @@ export default function ProblemTransformation() {
               
               <div className="space-y-3 text-foreground/70">
                 <p className="text-lg">• Aprendizado leve e divertido</p>
-                <p className="text-lg">• Vínculo em família</p>
-                <p className="text-lg">• Muita criatividade</p>
+                <p className="text-lg">• Mais conexão em família</p>
+                <p className="text-lg">• Criatividade em alta</p>
                 <p className="text-lg">• Menos tempo de tela</p>
                 <p className="text-lg">• Desenvolvimento real</p>
               </div>

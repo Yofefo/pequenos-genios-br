@@ -3,8 +3,8 @@ import { FileText, BookOpen, CheckSquare, Table, Download, MessageCircle } from 
 const includes = [
   {
     icon: FileText,
-    title: "PDF com 30 brincadeiras inteligentes",
-    description: "Versão para imprimir e digital, com instruções detalhadas"
+    title: "PDF com 30 brincadeiras criativas",
+    description: "Versão para imprimir e digital, com instruções passo a passo"
   },
   {
     icon: BookOpen,
@@ -19,7 +19,7 @@ const includes = [
   {
     icon: Table,
     title: "Tabela de faixa etária e objetivos",
-    description: "Organize as atividades por idade e objetivos de aprendizado"
+    description: "Organize as atividades por idade e tipo de aprendizado"
   }
 ];
 
@@ -32,7 +32,7 @@ export default function Includes() {
             Você recebe:
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Tudo que você precisa para começar a brincar e aprender hoje mesmo
+            Tudo o que precisa para começar a brincar e aprender hoje mesmo
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function Includes() {
             Acesso imediato após a compra
           </h3>
           <p className="text-lg opacity-90">
-            Link no e-mail ou WhatsApp para download instantâneo
+            Link enviado por e-mail ou WhatsApp para download instantâneo
           </p>
         </div>
       </div>

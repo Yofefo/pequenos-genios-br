@@ -13,7 +13,7 @@ export default function Guarantee() {
               Garantia de 7 dias — sem risco!
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Se o projecto não transformar a rotina do seu pequeno, devolvemos 100% do valor. 
+              Se o projeto não transformar a rotina do seu pequeno, devolvemos 100% do valor pago. 
               <span className="font-semibold text-foreground"> Sem burocracia, sem perguntas.</span>
             </p>
           </div>
@@ -25,7 +25,7 @@ export default function Guarantee() {
               </div>
               <h3 className="font-semibold text-foreground">100% Seguro</h3>
               <p className="text-gray-600 text-sm text-center">
-                Compra protegida e processamento seguro
+                Compra protegida e processamento confiável
               </p>
             </div>
 
@@ -35,7 +35,7 @@ export default function Guarantee() {
               </div>
               <h3 className="font-semibold text-foreground">Reembolso Total</h3>
               <p className="text-gray-600 text-sm text-center">
-                Devolução completa do valor pago
+                Devolução integral do valor investido
               </p>
             </div>
 
@@ -45,7 +45,7 @@ export default function Guarantee() {
               </div>
               <h3 className="font-semibold text-foreground">7 Dias</h3>
               <p className="text-gray-600 text-sm text-center">
-                Tempo suficiente para testar e avaliar
+                Tempo suficiente para testar e comprovar
               </p>
             </div>
           </div>
