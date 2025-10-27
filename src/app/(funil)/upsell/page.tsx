@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { Shield, Star, Check, X, Clock, CircleSlash, Smile, Moon, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 export default function UpsellPage() {
@@ -70,7 +69,11 @@ export default function UpsellPage() {
 
   const hardNav = (url: string) => {
     // Evita o router do Next e garante envio dos cookies da CartPanda
-    window.top.location.href = url;
+    if (window.top) {
+      window.top.location.href = url;
+    } else {
+      window.location.href = url;
+    }
   };
 
   const handleAcceptClick = (e: React.MouseEvent) => {
