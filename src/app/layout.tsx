@@ -72,29 +72,8 @@ export default function RootLayout({
           defer
         />
         
-        {/* Script CartPanda - Validação de vendas */}
-        <script
-          type="text/javascript"
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"
-          async
-          defer
-        />
-        
-        {/* Script CartPanda Adicional - Garantia de funcionamento */}
-        <script
-          type="text/javascript"
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"
-          async
-          defer
-        />
-        
-        {/* Script CartPanda Terceiro - Máxima compatibilidade */}
-        <script
-          type="text/javascript"
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"
-          async
-          defer
-        />
+        {/* Scripts para checkout brasileiro */}
+        {/* TODO: Adicionar scripts do gateway de pagamento brasileiro */}
         
         {/* Script Utmify - Rastreamento de UTMs */}
         <script
@@ -102,7 +81,6 @@ export default function RootLayout({
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
           data-utmify-ignore-iframe
-          data-utmify-is-cartpanda
           async
           defer
         />

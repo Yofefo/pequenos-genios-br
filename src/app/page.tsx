@@ -11,6 +11,7 @@ import CTA from '@/components/CTA';
 import Guarantee from '@/components/Guarantee';
 import Footer from '@/components/Footer';
 import dynamic from 'next/dynamic';
+import { redirectToCheckout } from '@/lib/checkout-br';
 
 // Lazy loading para componentes não críticos - Otimizado
 const LazyPurchaseNotifications = dynamic(() => import('@/components/PurchaseNotifications'), {
@@ -81,32 +82,15 @@ export default function Home() {
       currency: 'EUR'
     });
     
-    // Redirecionar para o gateway de pagamento
-    window.open('https://peskdigitalbusiness.mycartpanda.com/ckt/VoezV1', '_blank');
+    // Redirecionar para o gateway de pagamento brasileiro
+    redirectToCheckout('primary');
   };
 
   return (
     <>
       <head>
-        {/* Script CartPanda apenas */}
-        <script
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"
-          async
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.addEventListener('load', function() {
-                setTimeout(function() {
-                  if (typeof OcuExternal !== 'undefined') {
-                    new OcuExternal();
-                  }
-                }, 2000);
-              });
-            `,
-          }}
-          async
-        />
+        {/* Scripts para checkout brasileiro */}
+        {/* TODO: Adicionar scripts do gateway de pagamento brasileiro */}
       </head>
       
       <div className="min-h-screen bg-background">

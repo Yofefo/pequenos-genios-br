@@ -29,7 +29,9 @@ export default function BackRedirectPage() {
   };
 
   const handleCheckoutClick = () => {
-    window.open('https://peskdigitalbusiness.mycartpanda.com/ckt/KbM9YA', '_blank');
+    // TODO: Configurar checkout brasileiro
+    console.log('Redirecionando para checkout brasileiro...');
+    // window.open('URL_DO_CHECKOUT_BRASILEIRO', '_blank');
   };
 
   return (

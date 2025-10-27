@@ -63,14 +63,16 @@ export default function UpsellPage() {
   };
 
 
-  // Substitua pelos links copiados no admin da CartPanda (dessa oferta/funil)
-  const ACCEPT = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
-  const DECLINE = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
+  // URLs para checkout brasileiro
+  // TODO: Configurar URLs do gateway de pagamento brasileiro
+  const ACCEPT = '#checkout-brasileiro';
+  const DECLINE = '#obrigado';
 
   const hardNav = (url: string) => {
-    // Evita o router do Next e garante envio dos cookies da CartPanda
-    if (window.top) {
-      window.top.location.href = url;
+    // Redirecionamento para checkout brasileiro
+    if (url.includes('checkout')) {
+      console.log('Redirecionando para checkout brasileiro...');
+      // TODO: Implementar redirecionamento para gateway brasileiro
     } else {
       window.location.href = url;
     }
