@@ -239,7 +239,7 @@ export default function UpsellPage() {
                 
                 {/* Texto principal */}
                 <p className="text-white font-semibold text-lg mb-2">
-                  Baixe o PDF "Calminhos & Soninho"
+                  Baixe o PDF &ldquo;Calminhos & Soninho&rdquo;
                 </p>
                 <p className="text-white/80 text-sm">
                   no final desta página
@@ -410,7 +410,7 @@ export default function UpsellPage() {
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
-                    <span className="text-gray-700">Ritual 'Boa Noite, Corpo' (script de 90 segundos)</span>
+                    <span className="text-gray-700">Ritual &lsquo;Boa Noite, Corpo&rsquo; (script de 90 segundos)</span>
                   </div>
                 </div>
               </div>
@@ -428,7 +428,7 @@ export default function UpsellPage() {
             
             <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-6">
-                Imagina esta cena todas as noites:
+                Imagine essa cena todas as noites:
               </h3>
               <div className="text-left space-y-6 text-lg text-gray-700">
                 <div>
@@ -782,8 +782,8 @@ export default function UpsellPage() {
               </div>
               
               <div className="mb-6">
-                <span className="text-2xl text-gray-500 line-through">€39,00</span>
-                <span className="text-4xl font-bold text-primary ml-4">Hoje: €9,90</span>
+                <span className="text-2xl text-gray-500 line-through">R$39,00</span>
+                <span className="text-4xl font-bold text-primary ml-4">Hoje: R$14,90</span>
               </div>
               
               <p className="text-sm text-gray-600 mb-6">
@@ -819,7 +819,7 @@ export default function UpsellPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-              Mais de 500 famílias já transformaram as suas noites
+              Mais de 500 famílias já transformaram suas noites
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Resultados reais de pais que implementaram o Calminhos & Soninho
@@ -834,9 +834,9 @@ export default function UpsellPage() {
                 ))}
               </div>
               <p className="text-gray-700 italic mb-6 text-lg leading-relaxed">
-                &ldquo;&lsquo;Copo da Calma&rsquo; e &lsquo;Barquinho no Lago&rsquo; mudaram a nossa rotina. 
-                O Tiago adormece mais rápido e eu tenho tempo para mim à noite. 
-                Já não há stress na hora de dormir!&rdquo;
+                &ldquo;&lsquo;O Copo da Calma e o Barquinho no Lago mudaram nossa rotina. 
+                O Tiago adormece mais rápido e eu tenho tempo pra mim à noite. 
+                Acabou o stress na hora de dormir!&rsquo;&rdquo;
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
@@ -856,9 +856,9 @@ export default function UpsellPage() {
                 ))}
               </div>
               <p className="text-gray-700 italic mb-6 text-lg leading-relaxed">
-                &ldquo;O áudio &lsquo;História Sussurrada&rsquo; virou ritual cá em casa. 
-                A Inês pede para fazer todas as noites e já não precisa de ecrã para acalmar. 
-                Mudou completamente o ambiente familiar.&rdquo;
+                &ldquo;&lsquo;O áudio História Sussurrada virou ritual aqui em casa. 
+                A Inês pede pra fazer toda noite e já não precisa de tela pra acalmar. 
+                Mudou completamente o clima da casa.&rsquo;&rdquo;
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
@@ -906,7 +906,7 @@ export default function UpsellPage() {
                 Garantia de 7 dias
               </h2>
               <p className="text-lg text-gray-700 mb-2">
-                Experimenta por 7 dias. Se não sentires diferença, devolvemos o valor.
+                Experimente por 7 dias. Se não sentir diferença, devolvemos seu dinheiro.
               </p>
               <p className="text-sm text-gray-600">
                 Conteúdo lúdico; não substitui aconselhamento médico.
