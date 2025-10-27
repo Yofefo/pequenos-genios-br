@@ -41,7 +41,7 @@ export default function DownsellPage() {
     }
     
     // Redirecionar para CartPanda
-    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
+    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/ExOCU.peskdigitalbusiness-XEEIZEku8M?accepted=yes';
   };
 
   const handleRefuseClick = () => {
@@ -56,7 +56,7 @@ export default function DownsellPage() {
     }
     
     // Redirecionar para CartPanda
-    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
+    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/ExOCU.peskdigitalbusiness-XEEIZEku8M?accepted=no';
   };
 
   return (
