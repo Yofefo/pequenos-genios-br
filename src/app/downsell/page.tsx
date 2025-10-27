@@ -45,20 +45,24 @@ export default function DownsellPage() {
           src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js">
         </script>
 
-        <script>
-          // Aguardar carregamento completo antes de inicializar
-          document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
-              if (typeof OcuExternal !== 'undefined') {
-                try {
-                  new OcuExternal();
-                } catch (error) {
-                  console.log('OcuExternal já inicializado:', error);
-                }
-              }
-            }, 2000); // Delay maior para garantir que a página carregou
-          });
-        </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Aguardar carregamento completo antes de inicializar
+              document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                  if (typeof OcuExternal !== 'undefined') {
+                    try {
+                      new OcuExternal();
+                    } catch (error) {
+                      console.log('OcuExternal já inicializado:', error);
+                    }
+                  }
+                }, 2000); // Delay maior para garantir que a página carregou
+              });
+            `,
+          }}
+        />
       </head>
       
       <div className="min-h-screen bg-background">
