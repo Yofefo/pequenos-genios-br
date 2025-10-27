@@ -1,4 +1,4 @@
-import { FileText, BookOpen, CheckSquare, Table, Download, MessageCircle } from 'lucide-react';
+import { FileText, BookOpen, CheckSquare, Table, MessageCircle } from 'lucide-react';
 
 const includes = [
   {

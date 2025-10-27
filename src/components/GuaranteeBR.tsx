@@ -52,8 +52,8 @@ export default function Guarantee() {
 
           <div className="mt-8 p-6 bg-green-50 rounded-xl">
             <p className="text-lg text-green-800 font-semibold">
-              "Estamos tão confiantes na qualidade do Método Brinca+ que oferecemos esta garantia. 
-              Se não funcionar para sua família, devolvemos seu dinheiro."
+              &ldquo;Estamos tão confiantes na qualidade do Método Brinca+ que oferecemos esta garantia. 
+              Se não funcionar para sua família, devolvemos seu dinheiro.&rdquo;
             </p>
           </div>
         </div>
