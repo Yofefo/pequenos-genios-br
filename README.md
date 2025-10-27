@@ -1,6 +1,8 @@
-# Projeto Pequenos Gênios - Landing Page
+# Projeto Pequenos Gênios - Landing Page (Brasil)
 
-Landing page responsiva para o "Projeto Pequenos Gênios - Método Brinca+" desenvolvida com Next.js 14, TypeScript e Tailwind CSS.
+Landing page responsiva para o "Projeto Pequenos Gênios - Método Brinca+" **versão brasileira** desenvolvida com Next.js 15, TypeScript e Tailwind CSS.
+
+> ⚠️ **IMPORTANTE**: Este é o projeto **BRASILEIRO**, separado e independente do projeto português.
 
 ## 🚀 Características
 
@@ -13,11 +15,12 @@ Landing page responsiva para o "Projeto Pequenos Gênios - Método Brinca+" dese
 
 ## 🛠️ Stack Tecnológica
 
-- Next.js 14 (App Router)
+- Next.js 15 (App Router)
 - TypeScript
 - Tailwind CSS
 - Lucide React (ícones)
 - Meta Pixel (tracking)
+- Vercel (deploy)
 
 ## 📦 Instalação
 
@@ -67,11 +70,18 @@ npm start
 - `PageView`: Carregado automaticamente
 - `InitiateCheckout`: Pode ser adicionado na página de checkout
 
-## 🚀 Deploy na Vercel
+## 🚀 Deploy na Vercel (Brasil)
 
-1. Conecte o repositório à Vercel
-2. Configure as variáveis de ambiente se necessário
-3. Deploy automático a cada push
+1. **Criar repositório GitHub**:
+   - Nome: `pequenos-genios-br`
+   - Execute: `./conectar-github.sh`
+
+2. **Conectar à Vercel**:
+   - Acesse: https://vercel.com
+   - Conecte o repositório `pequenos-genios-br`
+   - Configure domínio brasileiro
+
+3. **Deploy automático** a cada push
 
 ## 📁 Estrutura do Projeto
 

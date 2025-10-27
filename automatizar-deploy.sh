@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# 🚀 SCRIPT PARA AUTOMATIZAR DEPLOY
+# 🚀 SCRIPT PARA AUTOMATIZAR DEPLOY - VERSÃO BRASILEIRA
 # Execute: chmod +x automatizar-deploy.sh && ./automatizar-deploy.sh
 
-echo "🚀 AUTOMATIZANDO DEPLOY..."
+echo "🚀 AUTOMATIZANDO DEPLOY DO PROJETO BRASILEIRO..."
 echo ""
 
 # Verificar se o build funciona
@@ -16,28 +16,30 @@ else
 fi
 
 echo ""
-echo "📋 PRÓXIMOS PASSOS:"
+echo "📋 PRÓXIMOS PASSOS PARA O PROJETO BRASILEIRO:"
 echo ""
 echo "1. 🔗 CONECTAR COM GITHUB:"
 echo "   Execute os comandos abaixo substituindo 'seuusuario' pelo seu usuário:"
 echo ""
-echo "   git remote add origin https://github.com/seuusuario/pequenos-genios-lp.git"
+echo "   git remote add origin https://github.com/seuusuario/pequenos-genios-br.git"
 echo "   git branch -M main"
 echo "   git push -u origin main"
 echo ""
 echo "2. 🌐 DEPLOY NA VERCEL:"
 echo "   - Acesse: https://vercel.com"
 echo "   - Clique em 'New Project'"
-echo "   - Conecte seu repositório GitHub"
+echo "   - Conecte o repositório 'pequenos-genios-br'"
 echo "   - Deploy automático!"
 echo ""
-echo "3. 🌐 CONFIGURAR DOMÍNIO:"
+echo "3. 🌐 CONFIGURAR DOMÍNIO BRASILEIRO:"
 echo "   - Na Vercel, vá em 'Domains'"
-echo "   - Adicione seu domínio da Hostinger"
-echo "   - Configure DNS na Hostinger"
+echo "   - Adicione seu domínio brasileiro"
+echo "   - Configure DNS no seu provedor"
 echo ""
-echo "✅ PROJETO PRONTO PARA DEPLOY!"
+echo "✅ PROJETO BRASILEIRO PRONTO PARA DEPLOY!"
 echo "📱 Siga os passos acima"
+echo ""
+echo "⚠️  IMPORTANTE: Este é o projeto BRASILEIRO, separado do português!"
 
 
 
