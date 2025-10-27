@@ -42,15 +42,12 @@ export default function DownsellPage() {
       {/* Scripts CartPanda para Downsell */}
       <head>
         <script
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"
-          async
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `new OcuExternal();`,
-          }}
-          async
-        />
+          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js">
+        </script>
+
+        <script>
+          new OcuExternal();
+        </script>
       </head>
       
       <div className="min-h-screen bg-background">
