@@ -13,7 +13,7 @@ export default function Guarantee() {
               Garantia de 7 dias — sem risco!
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Se o projeto não transformar a rotina do seu pequeno, devolvemos 100% do valor. 
+              Se o projecto não transformar a rotina do seu pequeno, devolvemos 100% do valor. 
               <span className="font-semibold text-foreground"> Sem burocracia, sem perguntas.</span>
             </p>
           </div>

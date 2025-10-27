@@ -29,7 +29,7 @@ export default function Includes() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Você recebe
+            Você recebe:
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Tudo que você precisa para começar a brincar e aprender hoje mesmo
@@ -76,6 +76,7 @@ export default function Includes() {
     </section>
   );
 }
+
 
 
 

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ProblemTransformation() {
   return (
     <section className="py-16 px-4 bg-gray-50">
@@ -7,7 +9,7 @@ export default function ProblemTransformation() {
             O problema de hoje
           </h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            Crianças cada vez mais dependentes de telas, pais sem tempo e brinquedos cada vez mais caros.
+            Crianças cada vez mais dependentes de ecrãs, pais sem tempo e brinquedos cada vez mais caros.
           </p>
         </div>
 
@@ -21,9 +23,24 @@ export default function ProblemTransformation() {
               <h3 className="text-2xl font-bold text-foreground">
                 Sem o Método Brinca+
               </h3>
+              
+              {/* Imagem sem método */}
+              <div className="bg-gray-50 rounded-xl p-4">
+                     <Image
+                       src="/images/hero/sem-metodo.png"
+                       alt="Situação sem o Método Brinca+"
+                       width={300}
+                       height={200}
+                       className="w-full h-auto object-contain rounded-lg"
+                       loading="lazy"
+                       placeholder="blur"
+                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                     />
+              </div>
+              
               <div className="space-y-3 text-foreground/70">
                 <p className="text-lg">• Tédio constante</p>
-                <p className="text-lg">• Dependência de telas</p>
+                <p className="text-lg">• Dependência de ecrãs</p>
                 <p className="text-lg">• Brinquedos caros</p>
                 <p className="text-lg">• Pouco aprendizado real</p>
                 <p className="text-lg">• Distrações constantes</p>
@@ -40,6 +57,21 @@ export default function ProblemTransformation() {
               <h3 className="text-2xl font-bold text-foreground">
                 Com o Método Brinca+
               </h3>
+              
+              {/* Imagem com método */}
+              <div className="bg-gray-50 rounded-xl p-4">
+                <Image
+                  src="/images/hero/com-metodo.png"
+                  alt="Situação com o Método Brinca+"
+                  width={300}
+                  height={200}
+                  className="w-full h-auto object-contain rounded-lg"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                />
+              </div>
+              
               <div className="space-y-3 text-foreground/70">
                 <p className="text-lg">• Aprendizado leve e divertido</p>
                 <p className="text-lg">• Vínculo em família</p>

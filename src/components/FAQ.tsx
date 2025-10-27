@@ -5,23 +5,23 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const faqs = [
   {
     question: "Preciso de materiais especiais?",
-    answer: "Não. As brincadeiras usam itens simples e comuns de casa como papel, canetas, objetos do dia a dia e materiais recicláveis."
+    answer: "Não. As brincadeiras usam itens simples e comuns de casa como papel, canetas, objectos do dia a dia e materiais recicláveis."
   },
   {
-    question: "Para qual idade serve?",
-    answer: "Recomendado para 3–8 anos, com variações por faixa etária. Cada atividade tem adaptações específicas para diferentes idades."
+    question: "Para que idade serve?",
+    answer: "Recomendado para 3–8 anos, com variações por faixa etária. Cada actividade tem adaptações específicas para diferentes idades."
   },
   {
-    question: "Quanto tempo leva?",
-    answer: "A maioria leva 10–15 minutos. Há extras de 5 minutos para momentos mais rápidos. Perfeito para o dia a dia corrido das famílias."
+    question: "Quanto tempo demora?",
+    answer: "A maioria demora 10–15 minutos. Há extras de 5 minutos para momentos mais rápidos. Perfeito para o dia a dia corrido das famílias."
   },
   {
     question: "Posso usar com várias crianças?",
-    answer: "Sim. Serve para 1 ou mais crianças. As atividades são adaptáveis para uso individual ou em grupo, ideal para famílias e professores."
+    answer: "Sim. Serve para 1 ou mais crianças. As actividades são adaptáveis para uso individual ou em grupo, ideal para famílias e professores."
   },
   {
     question: "Como recebo?",
-    answer: "Após a compra, você recebe o link por e-mail/WhatsApp para baixar o PDF. Acesso imediato e vitalício ao material."
+    answer: "Após a compra, recebe o link por e-mail/WhatsApp para descarregar o PDF. Acesso imediato e vitalício ao material."
   },
   {
     question: "Posso imprimir quantas vezes quiser?",
@@ -38,7 +38,7 @@ export default function FAQ() {
             Perguntas frequentes
           </h2>
           <p className="text-xl text-foreground/80">
-            Tire suas dúvidas sobre o Método Brinca+
+            Tire as suas dúvidas sobre o Método Brinca+
           </p>
         </div>
 

@@ -42,7 +42,7 @@ export default function MetricasVisuais() {
             </CardHeader>
             <CardContent className="p-0">
               <p className="text-lg font-semibold text-foreground mb-2">
-                relatam mais criatividade e menos telas
+                relatam mais criatividade e menos ecrãs
               </p>
               <p className="text-foreground/70">
                 Resultados comprovados pelos pais

@@ -11,7 +11,7 @@ export default function Storytelling() {
               Como nasceu o Método Brinca+
             </h2>
             <p className="text-xl text-foreground/80 leading-relaxed">
-              O Projeto Pequenos Gênios nasceu da rotina corrida de pais que queriam estimular seus filhos sem depender de telas, brinquedos caros ou muito tempo livre. O que parecia impossível virou um método simples e acessível — o Brinca+.
+              O Projeto Pequenos Génios nasceu da rotina corrida de pais que queriam estimular os seus filhos sem depender de ecrãs, brinquedos caros ou muito tempo livre. O que parecia impossível tornou-se um método simples e acessível — o Brinca+.
             </p>
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
@@ -29,7 +29,7 @@ export default function Storytelling() {
               <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 to-accent/5 min-h-[400px] flex items-center justify-center">
                 <Image
                   src="/images/storytelling/family-playing.png"
-                  alt="Família brincando juntos com o Método Brinca+"
+                  alt="Família a brincar juntos com o Método Brinca+"
                   width={500}
                   height={400}
                   className="w-full h-auto object-cover rounded-xl hover:scale-105 transition-transform duration-300"
@@ -42,8 +42,8 @@ export default function Storytelling() {
                       parent.innerHTML = `
                         <div class="flex flex-col items-center justify-center space-y-4 p-8 text-center">
                           <div class="text-6xl">👨‍👩‍👧‍👦</div>
-                          <h3 class="text-2xl font-bold text-foreground">Família Brincando Juntos</h3>
-                          <p class="text-foreground/70">Pais e filhos se divertindo com o Método Brinca+</p>
+                          <h3 class="text-2xl font-bold text-foreground">Família a Brincar Juntos</h3>
+                          <p class="text-foreground/70">Pais e filhos a divertirem-se com o Método Brinca+</p>
                           <div class="flex space-x-2">
                             <span class="text-2xl">🎨</span>
                             <span class="text-2xl">🧩</span>

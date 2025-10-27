@@ -8,8 +8,10 @@ const META_PIXEL_ID = '1397143025087613';
 export function MetaPixel() {
   useEffect(() => {
     if (typeof window !== 'undefined' && META_PIXEL_ID) {
-      // Carrega o script do Meta Pixel
+      // Carrega o script do Meta Pixel de forma otimizada
       const script = document.createElement('script');
+      script.async = true;
+      script.defer = true;
       script.innerHTML = `
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
