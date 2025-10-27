@@ -65,7 +65,7 @@ export default function UpsellPage() {
 
   // URLs para checkout brasileiro
   const ACCEPT = 'https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f';
-  const DECLINE = '#obrigado';
+  const DECLINE = 'https://pequenos-genios-9o55u1lpl-fernandos-projects-32ecaa0a.vercel.app/obrigado';
 
   const hardNav = (url: string) => {
     // Redirecionamento para checkout brasileiro (Kirvano)
@@ -96,8 +96,8 @@ export default function UpsellPage() {
           dangerouslySetInnerHTML={{
             __html: `
               var offer = "84dc1856-cdba-41e6-91ce-259d8dd6369f";
-              var nextPageURL = "https://cadastroseguro.fun/upsell";
-              var refusePageURL = null;
+              var nextPageURL = "https://pequenos-genios-9o55u1lpl-fernandos-projects-32ecaa0a.vercel.app/upsell";
+              var refusePageURL = "https://pequenos-genios-9o55u1lpl-fernandos-projects-32ecaa0a.vercel.app/obrigado";
             `,
           }}
         />
