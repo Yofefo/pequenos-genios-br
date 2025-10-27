@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description: "Transforme qualquer momento em aprendizagem com 30 brincadeiras inteligentes usando materiais simples de casa. Ideal para pais e professores de crianças dos 3-8 anos.",
   keywords: "brincadeiras educativas, actividades infantis, desenvolvimento infantil, educação, criatividade, aprendizagem",
   authors: [{ name: "Projeto Pequenos Génios" }],
+  other: {
+    'font-display': 'swap',
+  },
   openGraph: {
     title: "Projeto Pequenos Génios - Método Brinca+",
     description: "30 brincadeiras inteligentes para desenvolver criatividade e raciocínio com itens simples do dia a dia.",

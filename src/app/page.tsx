@@ -87,8 +87,59 @@ export default function Home() {
 
   return (
     <>
-      {/* Script CartPanda para Upsell Externa - Otimizado */}
+      {/* CSS Crítico Inline para Hero */}
       <head>
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .hero-critical {
+              background: #FFF8E7;
+              padding: 4rem 1rem;
+            }
+            .hero-title {
+              font-size: 3rem;
+              font-weight: 700;
+              line-height: 1.1;
+              color: #2D3748;
+              margin-bottom: 1.5rem;
+            }
+            .hero-subtitle {
+              font-size: 1.5rem;
+              color: #4A5568;
+              margin-bottom: 2rem;
+            }
+            .hero-cta {
+              background: linear-gradient(135deg, #4A90E2, #FF6B6B);
+              color: white;
+              padding: 1rem 2rem;
+              border-radius: 0.75rem;
+              font-weight: 700;
+              text-decoration: none;
+              display: inline-block;
+              transition: transform 0.3s;
+            }
+            .hero-cta:hover {
+              transform: scale(1.05);
+            }
+            @media (max-width: 768px) {
+              .hero-title { font-size: 2rem; }
+              .hero-subtitle { font-size: 1.25rem; }
+            }
+          `
+        }} />
+        
+        {/* Preload de recursos críticos */}
+        <link rel="preload" href="/images/hero/demo.webp" as="image" type="image/webp" />
+        <link rel="preload" href="/images/hero/cover.webp" as="image" type="image/webp" />
+        
+        {/* Preconnect para domínios externos */}
+        <link rel="preconnect" href="https://assets.mycartpanda.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        <link rel="preconnect" href="https://static.hj.contentsquare.net" />
+        
+        {/* DNS prefetch para outros recursos */}
+        <link rel="dns-prefetch" href="https://peskdigitalbusiness.mycartpanda.com" />
+        
+        {/* Script CartPanda para Upsell Externa - Otimizado */}
         <script
           src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"
           async

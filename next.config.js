@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Otimizações de performance
+  // Otimizações de performance avançadas
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: ['lucide-react'],
+    optimizePackageImports: ['lucide-react', '@radix-ui/react-accordion'],
     turbo: {
       rules: {
         '*.svg': {
@@ -12,6 +12,9 @@ const nextConfig = {
         },
       },
     },
+    // Otimizações adicionais
+    scrollRestoration: true,
+    optimizeServerReact: true,
   },
   
   // Compressão e otimização de imagens
@@ -106,7 +109,7 @@ const nextConfig = {
       config.optimization.usedExports = true;
       config.optimization.sideEffects = false;
       
-      // Otimizações de bundle
+      // Otimizações de bundle avançadas
       config.optimization.splitChunks = {
         chunks: 'all',
         minSize: 20000,
@@ -117,6 +120,12 @@ const nextConfig = {
             name: 'vendors',
             chunks: 'all',
             priority: 10,
+          },
+          ui: {
+            test: /[\\/]node_modules[\\/](@radix-ui|lucide-react)[\\/]/,
+            name: 'ui',
+            chunks: 'all',
+            priority: 15,
           },
           common: {
             name: 'common',

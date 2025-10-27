@@ -6,9 +6,10 @@ const DYNAMIC_CACHE = 'dynamic-v1';
 // Recursos críticos para cache
 const CRITICAL_RESOURCES = [
   '/',
-  '/images/hero/demo.gif',
-  '/images/hero/sem-metodo.png',
-  '/images/hero/com-metodo.png',
+  '/images/hero/demo.webp',
+  '/images/hero/sem-metodo.webp',
+  '/images/hero/com-metodo.webp',
+  '/images/hero/cover.webp',
   '/images/logo.png'
 ];
 

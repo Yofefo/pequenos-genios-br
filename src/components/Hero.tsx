@@ -20,20 +20,20 @@ export default function Hero({ onCtaClick }: HeroProps) {
   };
 
   return (
-    <section className="bg-background py-16 px-4">
+    <section className="hero-critical bg-background py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center space-y-12">
           {/* Conteúdo principal centralizado */}
           <div className="space-y-8 max-w-4xl mx-auto">
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
+              <h1 className="hero-title text-5xl lg:text-7xl font-bold text-foreground leading-tight">
                 Transforme o tédio em aprendizagem com o{' '}
                 <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   Projeto Pequenos Génios 🧠
                 </span>
               </h1>
               
-                     <p className="text-2xl lg:text-3xl text-gray-800 leading-relaxed max-w-3xl mx-auto">
+                     <p className="hero-subtitle text-2xl lg:text-3xl text-gray-800 leading-relaxed max-w-3xl mx-auto">
                        30 brincadeiras inteligentes que estimulam a criatividade e reduzem o tempo de ecrã — usando o que já tem em casa.
                      </p>
             </div>
@@ -83,7 +83,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
                   onClick={onCtaClick}
                   data-evt="cta-primary"
                   size="lg"
-                  className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"
+                  className="hero-cta bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"
                 >
                   <span>Descarregar o Guia Agora</span>
                   <ArrowRight className="w-7 h-7" />
