@@ -65,33 +65,11 @@ export default function UpsellPage() {
 
 
   const handleAcceptClick = () => {
-    // Inicializar CartPanda antes de redirecionar
-    if ((window as any).CartPandaOcuExternal && !(window as any).ocuExternalInitialized) {
-      try {
-        new (window as any).CartPandaOcuExternal();
-        (window as any).ocuExternalInitialized = true;
-      } catch (error) {
-        console.log('Erro ao inicializar CartPanda:', error);
-      }
-    }
-    
-    // Redirecionar para CartPanda
-    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/XEEIZEku8M?accepted=yes';
+    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
   };
 
   const handleRefuseClick = () => {
-    // Inicializar CartPanda antes de redirecionar
-    if ((window as any).CartPandaOcuExternal && !(window as any).ocuExternalInitialized) {
-      try {
-        new (window as any).CartPandaOcuExternal();
-        (window as any).ocuExternalInitialized = true;
-      } catch (error) {
-        console.log('Erro ao inicializar CartPanda:', error);
-      }
-    }
-    
-    // Redirecionar para CartPanda
-    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/XEEIZEku8M?accepted=no';
+    window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
   };
 
   return (
@@ -99,26 +77,23 @@ export default function UpsellPage() {
       {/* Script CartPanda com controle de inicialização */}
       <head>
         <script
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"
-          async
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Carregar script mas não inicializar automaticamente
-              window.addEventListener('load', function() {
-                // Aguardar um tempo para garantir que a página carregou completamente
-                setTimeout(function() {
-                  if (typeof OcuExternal !== 'undefined') {
-                    // Armazenar a classe para uso posterior
-                    window.CartPandaOcuExternal = OcuExternal;
-                    console.log('CartPanda OcuExternal carregado e pronto');
-                  }
-                }, 1000);
-              });
-            `,
-          }}
-        />
+          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js">
+        </script>
+
+        <script>
+          // Aguardar carregamento completo antes de inicializar
+          document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+              if (typeof OcuExternal !== 'undefined') {
+                try {
+                  new OcuExternal();
+                } catch (error) {
+                  console.log('OcuExternal já inicializado:', error);
+                }
+              }
+            }, 2000); // Delay maior para garantir que a página carregou
+          });
+        </script>
       </head>
       
       <div className="min-h-screen bg-background">
