@@ -90,6 +90,19 @@ export default function UpsellPage() {
 
   return (
     <>
+      <head>
+        {/* Script da Kirvano para Upsell */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var offer = "84dc1856-cdba-41e6-91ce-259d8dd6369f";
+              var nextPageURL = "https://cadastroseguro.fun/upsell";
+              var refusePageURL = null;
+            `,
+          }}
+        />
+        <script src="https://snippets.kirvano.com/upsell.min.js" />
+      </head>
       <div className="min-h-screen bg-background">
       {/* Disclaimer Impactante */}
       <div className="bg-red-600 py-3 px-4 relative overflow-hidden">
@@ -783,7 +796,7 @@ export default function UpsellPage() {
                 href={ACCEPT}
                 rel="external noopener"
                 onClick={handleAcceptClick}
-                className="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center cursor-pointer pointer-events-auto"
+                className="kirvano-payment-trigger w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center cursor-pointer pointer-events-auto"
               >
                 SIM, quero noites mais tranquilas
               </a>
@@ -792,7 +805,7 @@ export default function UpsellPage() {
                 href={DECLINE}
                 rel="external noopener"
                 onClick={handleRefuseClick}
-                className="text-gray-600 hover:text-gray-800 underline text-sm cursor-pointer pointer-events-auto"
+                className="kirvano-refuse-trigger text-gray-600 hover:text-gray-800 underline text-sm cursor-pointer pointer-events-auto"
               >
                 Não, obrigado — vou seguir sem o relaxamento
               </a>
@@ -911,7 +924,7 @@ export default function UpsellPage() {
               href={ACCEPT}
               rel="external noopener"
               onClick={handleAcceptClick}
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto flex items-center justify-center cursor-pointer pointer-events-auto"
+              className="kirvano-payment-trigger bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto flex items-center justify-center cursor-pointer pointer-events-auto"
             >
               SIM, quero noites mais tranquilas
             </a>
@@ -920,7 +933,7 @@ export default function UpsellPage() {
               href={DECLINE}
               rel="external noopener"
               onClick={handleRefuseClick}
-              className="text-white/80 hover:text-white underline text-lg cursor-pointer pointer-events-auto block mx-auto"
+              className="kirvano-refuse-trigger text-white/80 hover:text-white underline text-lg cursor-pointer pointer-events-auto block mx-auto"
             >
               Não, prefiro seguir sem o relaxamento
             </a>
@@ -942,7 +955,7 @@ export default function UpsellPage() {
               href={ACCEPT}
               rel="external noopener"
               onClick={handleAcceptClick}
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors min-w-[60px] cursor-pointer pointer-events-auto"
+              className="kirvano-payment-trigger bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors min-w-[60px] cursor-pointer pointer-events-auto"
             >
               SIM
             </a>
@@ -950,7 +963,7 @@ export default function UpsellPage() {
               href={DECLINE}
               rel="external noopener"
               onClick={handleRefuseClick}
-              className="text-white/80 hover:text-white underline text-sm transition-colors cursor-pointer pointer-events-auto"
+              className="kirvano-refuse-trigger text-white/80 hover:text-white underline text-sm transition-colors cursor-pointer pointer-events-auto"
             >
               Não
             </a>
