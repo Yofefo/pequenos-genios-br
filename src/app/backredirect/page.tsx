@@ -29,9 +29,9 @@ export default function BackRedirectPage() {
   };
 
   const handleCheckoutClick = () => {
-    // TODO: Configurar checkout brasileiro
+    // Redirecionar para checkout brasileiro (Kirvano)
     console.log('Redirecionando para checkout brasileiro...');
-    // window.open('URL_DO_CHECKOUT_BRASILEIRO', '_blank');
+    window.open('https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f', '_blank');
   };
 
   return (

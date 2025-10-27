@@ -3,7 +3,7 @@
 
 export const CHECKOUT_CONFIG = {
   // URLs de checkout (substituir pelas URLs reais do gateway brasileiro)
-  primary: '#checkout-brasileiro',
+  primary: 'https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f',
   upsell: '#checkout-upsell-brasileiro',
   obrigado: '#obrigado',
   
@@ -35,12 +35,13 @@ export const CHECKOUT_CONFIG = {
 export const redirectToCheckout = (type: 'primary' | 'upsell' = 'primary') => {
   console.log(`Redirecionando para checkout brasileiro: ${type}`);
   
-  // TODO: Implementar redirecionamento real
-  // Exemplo:
-  // window.location.href = `${CHECKOUT_CONFIG.domain.checkout}/${type}`;
-  
-  // Por enquanto, apenas log
-  console.log('Configuração de checkout:', CHECKOUT_CONFIG);
+  // Redirecionamento real para Kirvano
+  if (type === 'primary') {
+    window.open(CHECKOUT_CONFIG.primary, '_blank');
+  } else {
+    // Para upsell, ainda usar placeholder
+    console.log('Upsell checkout - implementar quando necessário');
+  }
 };
 
 // Função para formatar preço em reais

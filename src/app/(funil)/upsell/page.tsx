@@ -64,15 +64,13 @@ export default function UpsellPage() {
 
 
   // URLs para checkout brasileiro
-  // TODO: Configurar URLs do gateway de pagamento brasileiro
-  const ACCEPT = '#checkout-brasileiro';
+  const ACCEPT = 'https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f';
   const DECLINE = '#obrigado';
 
   const hardNav = (url: string) => {
-    // Redirecionamento para checkout brasileiro
-    if (url.includes('checkout')) {
-      console.log('Redirecionando para checkout brasileiro...');
-      // TODO: Implementar redirecionamento para gateway brasileiro
+    // Redirecionamento para checkout brasileiro (Kirvano)
+    if (url.includes('kirvano')) {
+      window.open(url, '_blank');
     } else {
       window.location.href = url;
     }

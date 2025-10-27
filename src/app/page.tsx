@@ -82,7 +82,7 @@ export default function Home() {
       currency: 'EUR'
     });
     
-    // Redirecionar para o gateway de pagamento brasileiro
+    // Redirecionar para o gateway de pagamento brasileiro (Kirvano)
     redirectToCheckout('primary');
   };
 
