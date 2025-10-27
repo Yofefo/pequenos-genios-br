@@ -83,26 +83,24 @@ export default function UpsellPage() {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              // Aguardar carregamento do script
-              function initOcuExternal() {
-                if (typeof OcuExternal !== 'undefined') {
-                  try {
-                    new OcuExternal();
-                  } catch (error) {
-                    console.log('OcuExternal já inicializado ou erro:', error);
-                  }
-                } else {
-                  // Tentar novamente após 100ms
-                  setTimeout(initOcuExternal, 100);
-                }
-              }
-              
-              // Inicializar quando DOM estiver pronto
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initOcuExternal);
-              } else {
-                initOcuExternal();
-              }
+              // Aguardar carregamento completo da página
+              window.addEventListener('load', function() {
+                setTimeout(function() {
+                  if (typeof OcuExternal !== 'undefined') {
+                    try {
+                      // Verificar se já foi inicializado
+                      if (!window.ocuExternalInitialized) {
+                        new OcuExternal();
+                        window.ocuExternalInitialized = true;
+                      }
+                    } catch (error) {
+                      console.log('OcuExternal error:', error);
+                    }
+                    } else {
+                      console.log('OcuExternal not available');
+                    }
+                }, 500); // Delay de 500ms após carregamento
+              });
             `,
           }}
         />
