@@ -64,16 +64,21 @@ export default function UpsellPage() {
   };
 
 
+  const base = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk';
+
+  const go = (url: string) => {
+    // força navegação hard (não deixa o Next interceptar)
+    window.location.assign(url);
+  };
+
   const handleAcceptClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    const url = '/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
-    window.location.assign(url);
+    go(`${base}?accepted=yes`);
   };
 
   const handleRefuseClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    const url = '/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
-    window.location.assign(url);
+    go(`${base}?accepted=no`);
   };
 
   return (
@@ -767,20 +772,23 @@ export default function UpsellPage() {
             </div>
             
             <div className="space-y-4">
-              <Button
+              <a
+                href={`${base}?accepted=yes`}
+                rel="external"
                 onClick={handleAcceptClick}
-                size="lg"
-                className="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
               >
                 SIM, quero noites mais tranquilas
-              </Button>
+              </a>
               
-              <button
+              <a
+                href={`${base}?accepted=no`}
+                rel="external"
                 onClick={handleRefuseClick}
                 className="text-gray-600 hover:text-gray-800 underline text-sm cursor-pointer"
               >
                 Não, obrigado — vou seguir sem o relaxamento
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -892,20 +900,23 @@ export default function UpsellPage() {
       <section className="py-16 px-4 bg-gradient-to-br from-primary to-accent">
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-6">
-            <Button
+            <a
+              href={`${base}?accepted=yes`}
+              rel="external"
               onClick={handleAcceptClick}
-              size="lg"
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto flex items-center justify-center"
             >
               SIM, quero noites mais tranquilas
-            </Button>
+            </a>
             
-            <button
+            <a
+              href={`${base}?accepted=no`}
+              rel="external"
               onClick={handleRefuseClick}
               className="text-white/80 hover:text-white underline text-lg cursor-pointer block mx-auto"
             >
               Não, prefiro seguir sem o relaxamento
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -920,18 +931,22 @@ export default function UpsellPage() {
             </p>
           </div>
           <div className="flex space-x-2">
-            <button
+            <a
+              href={`${base}?accepted=yes`}
+              rel="external"
               onClick={handleAcceptClick}
               className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors min-w-[60px]"
             >
               SIM
-            </button>
-            <button
+            </a>
+            <a
+              href={`${base}?accepted=no`}
+              rel="external"
               onClick={handleRefuseClick}
               className="text-white/80 hover:text-white underline text-sm transition-colors"
             >
               Não
-            </button>
+            </a>
           </div>
         </div>
       </div>
