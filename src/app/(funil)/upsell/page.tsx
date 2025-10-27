@@ -113,7 +113,7 @@ export default function UpsellPage() {
             <span className="text-red-600 font-bold text-lg">{formatTime(timeLeft)}</span>
           </div>
           <p className="text-white font-bold text-center uppercase tracking-wide text-base sm:text-lg">
-            Por favor, percorra a página até ao fim para finalizar a sua compra.
+            Por favor, percorra a página até o fim para finalizar a sua compra.
           </p>
         </div>
       </div>
@@ -122,7 +122,7 @@ export default function UpsellPage() {
       <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 py-10 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Antes de sair: há algo que vai dar ao teu filho a{' '}
+            Antes de sair: existe algo que vai dar ao seu filho a{' '}
             <span className="text-blue-300">calma</span> que o dia precisa.
           </h1>
           
@@ -136,9 +136,9 @@ export default function UpsellPage() {
                 <div className="absolute inset-0 flex items-center justify-center z-10">
                   <div className="text-center max-w-sm px-4">
                     <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-2 leading-tight">
-                      Do que adianta<br />
-                      desenvolver o teu<br />
-                      pequeno génio...<br />
+                      De que adianta<br />
+                      desenvolver o seu<br />
+                      pequeno gênio...<br />
                       se ele não descansa?
                     </h2>
                   </div>
@@ -151,7 +151,7 @@ export default function UpsellPage() {
                     <div className="flex items-center space-x-2">
                       <CircleSlash className="w-4 h-4 text-white flex-shrink-0" />
                       <span className="text-white font-semibold text-xs leading-tight">
-                        Brincadeira<br />sem ecrã
+                        Brincadeira<br />sem tela
                       </span>
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export default function UpsellPage() {
           {/* Subtítulo abaixo do esquema */}
           <div className="text-center mb-8">
             <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white leading-relaxed max-w-3xl mx-auto px-4">
-              Transforma a energia da brincadeira em calma e sono gostoso com técnicas simples e naturais.
+              Transforme a energia da brincadeira em calma e sono gostoso com técnicas simples e naturais.
             </p>
           </div>
           
@@ -239,7 +239,7 @@ export default function UpsellPage() {
                 
                 {/* Texto principal */}
                 <p className="text-white font-semibold text-lg mb-2">
-                  Descarregue o PDF &ldquo;Calminhos & Soninho&rdquo;
+                  Baixe o PDF "Calminhos & Soninho"
                 </p>
                 <p className="text-white/80 text-sm">
                   no final desta página
@@ -264,14 +264,14 @@ export default function UpsellPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8 text-center">
-            Tens controlo na hora de dormir?
+            Você tem controle na hora de dormir?
           </h2>
           
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             {[
-              "Birra ou choradeira para ir para a cama",
-              "Precisa de ecrã para acalmar",
-              "Demora 40+ min para adormecer",
+              "Birra ou choradeira para ir pra cama",
+              "Precisa de tela para se acalmar",
+              "Demora mais de 40 minutos para adormecer",
               "Acorda várias vezes durante a noite"
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-3 p-4 bg-red-50 border border-red-200 rounded-lg">
@@ -285,7 +285,7 @@ export default function UpsellPage() {
           
           <div className="text-center">
             <p className="text-xl text-gray-700 font-semibold">
-              Se marcaste 1 ou mais, ainda falta a parte mais importante: aprender a desacelerar.
+              Se marcou 1 ou mais, ainda falta a parte mais importante: aprender a desacelerar.
             </p>
           </div>
         </div>
@@ -300,7 +300,7 @@ export default function UpsellPage() {
               {/* Título do Carrossel */}
               <div className="text-center mb-8">
                 <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-                  Algumas das Técnicas que o seu filho vai aprender
+                  Algumas das técnicas que o seu filho vai aprender
                 </h3>
               </div>
               
@@ -359,11 +359,11 @@ export default function UpsellPage() {
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
-                    <span className="text-gray-700">Mimo Sonoro (ruído branco doméstico + instruções)</span>
+                    <span className="text-gray-700">Mimo Sonoro (ruído branco caseiro + instruções)</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
-                    <span className="text-gray-700">&ldquo;Areia Mágica&rdquo; (imaginação + relaxamento de mãos)</span>
+                    <span className="text-gray-700">Areia Mágica (imaginação + relaxamento das mãos)</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
@@ -394,7 +394,7 @@ export default function UpsellPage() {
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
-                    <span className="text-gray-700">Cheiro do Sonho (cheiros neutros/seguros)</span>
+                    <span className="text-gray-700">Cheiro do Sonho (aromas neutros e seguros)</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
@@ -402,15 +402,15 @@ export default function UpsellPage() {
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
-                    <span className="text-gray-700">Abraço de Borboleta (EMDR infantil leve)</span>
+                    <span className="text-gray-700">Abraço de Borboleta (versão infantil do EMDR)</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
-                    <span className="text-gray-700">Manta Pesa-Leve (com materiais de casa)</span>
+                    <span className="text-gray-700">Manta Pesa-Leve (com materiais simples de casa)</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-primary font-bold">•</span>
-                    <span className="text-gray-700">Ritual &ldquo;Boa Noite, Corpo&rdquo; (script de 90s)</span>
+                    <span className="text-gray-700">Ritual 'Boa Noite, Corpo' (script de 90 segundos)</span>
                   </div>
                 </div>
               </div>
@@ -419,7 +419,7 @@ export default function UpsellPage() {
 
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-              O complemento perfeito para o guia Pequenos Génios
+              O complemento perfeito para o guia Pequenos Gênios
             </h2>
             
             <p className="text-xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">
