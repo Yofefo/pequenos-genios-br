@@ -23,6 +23,7 @@ const eslintConfig = [
   {
     rules: {
       "@next/next/no-sync-scripts": "off",
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 ];
