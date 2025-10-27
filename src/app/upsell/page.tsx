@@ -77,12 +77,35 @@ export default function UpsellPage() {
       {/* Scripts CartPanda para Upsell */}
       <head>
         <script
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js">
-        </script>
-
-        <script>
-          new OcuExternal();
-        </script>
+          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"
+          async
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Aguardar carregamento do script
+              function initOcuExternal() {
+                if (typeof OcuExternal !== 'undefined') {
+                  try {
+                    new OcuExternal();
+                  } catch (error) {
+                    console.log('OcuExternal já inicializado ou erro:', error);
+                  }
+                } else {
+                  // Tentar novamente após 100ms
+                  setTimeout(initOcuExternal, 100);
+                }
+              }
+              
+              // Inicializar quando DOM estiver pronto
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initOcuExternal);
+              } else {
+                initOcuExternal();
+              }
+            `,
+          }}
+        />
       </head>
       
       <div className="min-h-screen bg-background">
