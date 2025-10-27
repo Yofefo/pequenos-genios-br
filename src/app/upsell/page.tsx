@@ -73,19 +73,7 @@ export default function UpsellPage() {
   };
 
   return (
-    <>
-      {/* Scripts CartPanda para Upsell */}
-      <head>
-        <script
-          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js">
-        </script>
-
-        <script>
-          new OcuExternal();
-        </script>
-      </head>
-      
-      <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       {/* Disclaimer Impactante */}
       <div className="bg-red-600 py-3 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-red-700 to-red-600 animate-pulse"></div>
@@ -943,6 +931,5 @@ export default function UpsellPage() {
         </div>
       </div>
     </div>
-    </>
   );
 }
