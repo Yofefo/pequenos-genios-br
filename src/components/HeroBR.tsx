@@ -113,7 +113,12 @@ export default function Hero({ onCtaClick }: HeroProps) {
                 </Button>
                 
                 <button
-                  onClick={handleScrollToPitch}
+                  onClick={() => {
+                    const pitchSection = document.querySelector('[data-section="pitch"]') as HTMLElement;
+                    if (pitchSection) {
+                      pitchSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                   className="text-gray-600 hover:text-gray-800 underline text-lg cursor-pointer"
                 >
                   Ver mais detalhes ↓
