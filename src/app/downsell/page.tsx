@@ -30,15 +30,63 @@ export default function DownsellPage() {
   };
 
   const handleAcceptClick = () => {
+    // Inicializar CartPanda antes de redirecionar
+    if (window.CartPandaOcuExternal && !window.ocuExternalInitialized) {
+      try {
+        new window.CartPandaOcuExternal();
+        window.ocuExternalInitialized = true;
+      } catch (error) {
+        console.log('Erro ao inicializar CartPanda:', error);
+      }
+    }
+    
+    // Redirecionar para CartPanda
     window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes';
   };
 
   const handleRefuseClick = () => {
+    // Inicializar CartPanda antes de redirecionar
+    if (window.CartPandaOcuExternal && !window.ocuExternalInitialized) {
+      try {
+        new window.CartPandaOcuExternal();
+        window.ocuExternalInitialized = true;
+      } catch (error) {
+        console.log('Erro ao inicializar CartPanda:', error);
+      }
+    }
+    
+    // Redirecionar para CartPanda
     window.location.href = 'https://peskdigitalbusiness.mycartpanda.com/ex-ocu/next-offer/PZYWAAO2vk?accepted=no';
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      {/* Script CartPanda com controle de inicialização */}
+      <head>
+        <script
+          src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"
+          async
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Carregar script mas não inicializar automaticamente
+              window.addEventListener('load', function() {
+                // Aguardar um tempo para garantir que a página carregou completamente
+                setTimeout(function() {
+                  if (typeof OcuExternal !== 'undefined') {
+                    // Armazenar a classe para uso posterior
+                    window.CartPandaOcuExternal = OcuExternal;
+                    console.log('CartPanda OcuExternal carregado e pronto');
+                  }
+                }, 1000);
+              });
+            `,
+          }}
+        />
+      </head>
+      
+      <div className="min-h-screen bg-background">
       {/* Disclaimer Impactante */}
       <div className="bg-red-600 py-3 px-4 relative overflow-hidden">
         <div className="text-center">
@@ -251,5 +299,6 @@ export default function DownsellPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
