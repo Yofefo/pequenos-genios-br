@@ -769,7 +769,6 @@ export default function UpsellPage() {
             <div className="space-y-4">
               <Button
                 onClick={handleAcceptClick}
-                href="/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes"
                 size="lg"
                 className="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
@@ -895,7 +894,6 @@ export default function UpsellPage() {
           <div className="space-y-6">
             <Button
               onClick={handleAcceptClick}
-              href="/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes"
               size="lg"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl w-full sm:w-auto"
             >

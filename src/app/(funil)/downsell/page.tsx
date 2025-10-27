@@ -105,7 +105,6 @@ export default function DownsellPage() {
                 <div className="flex justify-center mb-6">
                   <Button
                     onClick={handleAcceptClick}
-                    href="/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes"
                     size="lg"
                     className="bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-2xl text-lg md:text-xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-2"
                   >
@@ -240,7 +239,6 @@ export default function DownsellPage() {
           <div className="flex space-x-2">
             <Button
               onClick={handleAcceptClick}
-              href="/ex-ocu/next-offer/PZYWAAO2vk?accepted=yes"
               size="sm"
               className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold"
             >
