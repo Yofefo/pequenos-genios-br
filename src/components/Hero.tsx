@@ -59,7 +59,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
               <div className="bg-white rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
                 <div className="rounded-lg overflow-hidden">
                   <Image
-                    src="/images/hero/demo.png"
+                    src="/images/hero/demo.webp"
                     alt="Demonstração do Projeto Pequenos Génios em acção"
                     width={600}
                     height={400}
@@ -69,7 +69,8 @@ export default function Hero({ onCtaClick }: HeroProps) {
                     placeholder="blur"
                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    quality={90}
+                    quality={85}
+                    fetchPriority="high"
                   />
                 </div>
               </div>

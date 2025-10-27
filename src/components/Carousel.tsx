@@ -10,19 +10,19 @@ export default function Carousel() {
 
   const images = [
     {
-      src: '/images/hero/CARROSEL1.png',
+      src: '/images/hero/CARROSEL1.webp',
       alt: 'Conteúdo do Projeto Pequenos Génios - Slide 1'
     },
     {
-      src: '/images/hero/CARROSEL2.png',
+      src: '/images/hero/CARROSEL2.webp',
       alt: 'Conteúdo do Projeto Pequenos Génios - Slide 2'
     },
     {
-      src: '/images/hero/CARROSEL3.png',
+      src: '/images/hero/CARROSEL3.webp',
       alt: 'Conteúdo do Projeto Pequenos Génios - Slide 3'
     },
     {
-      src: '/images/hero/CARROSEL4.png',
+      src: '/images/hero/CARROSEL4.webp',
       alt: 'Conteúdo do Projeto Pequenos Génios - Slide 4'
     }
   ];

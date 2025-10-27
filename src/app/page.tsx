@@ -7,11 +7,8 @@ import Benefits from '@/components/Benefits';
 import CTAIntermediario from '@/components/CTAIntermediario';
 import Includes from '@/components/Includes';
 import HowItWorks from '@/components/HowItWorks';
-import Bonus from '@/components/Bonus';
-import MetricasVisuais from '@/components/MetricasVisuais';
 import CTA from '@/components/CTA';
 import Guarantee from '@/components/Guarantee';
-import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import dynamic from 'next/dynamic';
 
@@ -29,11 +26,18 @@ const LazySocialProof = dynamic(() => import('@/components/SocialProof'), {
   loading: () => <div className="py-16 px-4 bg-background"><div className="max-w-6xl mx-auto"><div className="animate-pulse bg-gray-200 rounded-lg h-96"></div></div></div>
 });
 
-// Lazy loading para componentes adicionais (se necessário)
-// const LazyVSL = dynamic(() => import('@/components/VSL'), {
-//   ssr: false,
-//   loading: () => null
-// });
+// Lazy loading para componentes adicionais
+const LazyMetricasVisuais = dynamic(() => import('@/components/MetricasVisuais'), {
+  loading: () => <div className="py-16 px-4 bg-white"><div className="max-w-6xl mx-auto"><div className="animate-pulse bg-gray-200 rounded-lg h-64"></div></div></div>
+});
+
+const LazyBonus = dynamic(() => import('@/components/Bonus'), {
+  loading: () => <div className="py-16 px-4 bg-gradient-to-br from-secondary/20 to-accent/20"><div className="max-w-6xl mx-auto"><div className="animate-pulse bg-gray-200 rounded-lg h-96"></div></div></div>
+});
+
+const LazyFAQ = dynamic(() => import('@/components/FAQ'), {
+  loading: () => <div className="py-16 px-4 bg-background"><div className="max-w-4xl mx-auto"><div className="animate-pulse bg-gray-200 rounded-lg h-64"></div></div></div>
+});
 import { trackEvent } from '@/lib/pixel';
 
 export default function Home() {
@@ -83,15 +87,24 @@ export default function Home() {
 
   return (
     <>
-      {/* Script CartPanda para Upsell Externa */}
+      {/* Script CartPanda para Upsell Externa - Otimizado */}
       <head>
         <script
           src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/libs/ocu-external.js"
           async
+          defer
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `new OcuExternal();`,
+            __html: `
+              window.addEventListener('load', function() {
+                setTimeout(function() {
+                  if (typeof OcuExternal !== 'undefined') {
+                    new OcuExternal();
+                  }
+                }, 1000);
+              });
+            `,
           }}
           async
         />
@@ -123,19 +136,19 @@ export default function Home() {
       <HowItWorks />
       
       {/* SESSÃO 9: Titulo - Números que comprovam o sucesso */}
-      <MetricasVisuais />
+      <LazyMetricasVisuais />
       
       {/* SESSÃO 10: Titulo - Garanta o seu acesso com desconto de lançamento! */}
       <CTA onCtaClick={handleCtaClick} />
       
       {/* SESSÃO 11: Titulo - Presente de Lançamento 🎁 */}
-      <Bonus />
+      <LazyBonus />
       
       {/* SESSÃO 12: Titulo - Garantia de 7 dias — sem risco! */}
       <Guarantee />
       
       {/* SESSÃO 13: Titulo - Perguntas frequentes */}
-      <FAQ />
+      <LazyFAQ />
       
       <Footer />
       

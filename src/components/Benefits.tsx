@@ -41,11 +41,11 @@ export default function Benefits() {
   
   // Array de imagens placeholder - você pode adicionar mais conforme necessário
   const carouselImages = [
-    { src: '/images/benefits/pqn-1.png', alt: 'Benefício 1' },
-    { src: '/images/benefits/pqn-2.png', alt: 'Benefício 2' },
-    { src: '/images/benefits/pqn-3.png', alt: 'Benefício 3' },
-    { src: '/images/benefits/pqn-4.png', alt: 'Benefício 4' },
-    { src: '/images/benefits/pqn-5.png', alt: 'Benefício 5' },
+    { src: '/images/benefits/pqn-1.webp', alt: 'Benefício 1' },
+    { src: '/images/benefits/pqn-2.webp', alt: 'Benefício 2' },
+    { src: '/images/benefits/pqn-3.webp', alt: 'Benefício 3' },
+    { src: '/images/benefits/pqn-4.webp', alt: 'Benefício 4' },
+    { src: '/images/benefits/pqn-5.webp', alt: 'Benefício 5' },
   ];
 
   // Auto-play do carrossel

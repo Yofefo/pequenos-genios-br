@@ -27,7 +27,7 @@ export default function ProblemTransformation() {
               {/* Imagem sem método */}
               <div className="bg-gray-50 rounded-xl p-4">
                      <Image
-                       src="/images/hero/sem-metodo.png"
+                       src="/images/hero/sem-metodo.webp"
                        alt="Situação sem o Método Brinca+"
                        width={300}
                        height={200}
@@ -60,16 +60,16 @@ export default function ProblemTransformation() {
               
               {/* Imagem com método */}
               <div className="bg-gray-50 rounded-xl p-4">
-                <Image
-                  src="/images/hero/com-metodo.png"
-                  alt="Situação com o Método Brinca+"
-                  width={300}
-                  height={200}
-                  className="w-full h-auto object-contain rounded-lg"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-                />
+                     <Image
+                       src="/images/hero/com-metodo.webp"
+                       alt="Situação com o Método Brinca+"
+                       width={300}
+                       height={200}
+                       className="w-full h-auto object-contain rounded-lg"
+                       loading="lazy"
+                       placeholder="blur"
+                       blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                     />
               </div>
               
               <div className="space-y-3 text-foreground/70">
