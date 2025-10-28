@@ -1,12 +1,7 @@
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
-interface HeroProps {
-  onCtaClick: (e?: React.MouseEvent) => void;
-}
-
-export default function Hero({ onCtaClick }: HeroProps) {
+export default function Hero() {
   // Data dinâmica para o bónus (sempre hoje + 7 dias)
   const getBonusDate = () => {
     const today = new Date();
@@ -73,27 +68,15 @@ export default function Hero({ onCtaClick }: HeroProps) {
             {/* CTA centralizado */}
             <div className="space-y-4">
               <div className="flex justify-center">
-                <Button
-                  type="button"
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    console.log('🎯 Hero CTA clicado!');
-                    onCtaClick(e);
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    console.log('🎯 Hero CTA onClick!');
-                    onCtaClick(e);
-                  }}
-                  data-evt="cta-primary"
-                  size="lg"
-                  className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"
+                <a 
+                  href="https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3 cursor-pointer"
                 >
                   <span>Baixar o Guia Agora</span>
                   <ArrowRight className="w-7 h-7" />
-                </Button>
+                </a>
               </div>
               
               
