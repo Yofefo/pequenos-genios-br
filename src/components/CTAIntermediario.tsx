@@ -14,15 +14,14 @@ export default function CTAIntermediario() {
           </p>
 
           <div className="flex justify-center">
-            <a 
-              href="https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center space-x-3 cursor-pointer"
+            <div 
+              onClick={() => window.open('https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f', '_blank')}
+              className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center space-x-3 cursor-pointer select-none"
+              style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}
             >
               <span>Quero Começar Hoje 🚀</span>
               <ArrowRight className="w-7 h-7" />
-            </a>
+            </div>
           </div>
         </div>
       </div>

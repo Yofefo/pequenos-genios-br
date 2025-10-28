@@ -20,15 +20,14 @@ export default function CTA() {
           </div>
 
           <div className="flex justify-center mb-8">
-            <a 
-              href="https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-3xl flex items-center space-x-3 animate-custom-pulse border-4 border-green-400 cursor-pointer"
+            <div 
+              onClick={() => window.open('https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f', '_blank')}
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-3xl flex items-center space-x-3 animate-custom-pulse border-4 border-green-400 cursor-pointer select-none"
+              style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}
             >
               <span>Baixar Agora 🧠</span>
               <ArrowRight className="w-8 h-8" />
-            </a>
+            </div>
           </div>
 
           {/* Selos de segurança */}

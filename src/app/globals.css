@@ -88,24 +88,30 @@ body {
   outline-offset: 2px;
 }
 
-/* DESABILITAR SCROLL COMPORTAMENTO GLOBALMENTE */
+/* DESABILITAR SCROLL COMPORTAMENTO GLOBALMENTE - MÁXIMA AGRESSIVIDADE */
+html, body, * {
+  scroll-behavior: auto !important;
+  scroll-snap-type: none !important;
+}
+
+/* Prevenir scroll em TODOS os elementos possíveis */
+a, button, div, span, p, h1, h2, h3, h4, h5, h6, section, article, main, header, footer, nav {
+  scroll-behavior: auto !important;
+  scroll-snap-type: none !important;
+}
+
+/* Forçar comportamento de scroll instantâneo */
 html {
   scroll-behavior: auto !important;
+  scroll-padding: 0 !important;
+  scroll-snap-type: none !important;
 }
 
-/* Prevenir scroll em todos os elementos */
+/* Prevenir qualquer animação de scroll */
 * {
   scroll-behavior: auto !important;
-}
-
-/* Prevenir scroll suave em links */
-a {
-  scroll-behavior: auto !important;
-}
-
-/* Prevenir scroll suave em botões */
-button {
-  scroll-behavior: auto !important;
+  scroll-snap-type: none !important;
+  scroll-padding: 0 !important;
 }
 
 /* Melhorias de performance */
