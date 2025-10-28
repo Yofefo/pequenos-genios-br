@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface HeroProps {
-  onCtaClick: () => void;
+  onCtaClick: (e?: React.MouseEvent) => void;
 }
 
 export default function Hero({ onCtaClick }: HeroProps) {
@@ -74,7 +74,10 @@ export default function Hero({ onCtaClick }: HeroProps) {
             <div className="space-y-4">
               <div className="flex justify-center">
                 <Button
-                  onClick={onCtaClick}
+                  onClick={(e) => {
+                    console.log('🎯 Hero CTA clicado!');
+                    onCtaClick(e);
+                  }}
                   data-evt="cta-primary"
                   size="lg"
                   className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"

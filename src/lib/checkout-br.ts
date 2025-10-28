@@ -33,14 +33,21 @@ export const CHECKOUT_CONFIG = {
 
 // Função para redirecionar para checkout brasileiro
 export const redirectToCheckout = (type: 'primary' | 'upsell' = 'primary') => {
-  console.log(`Redirecionando para checkout brasileiro: ${type}`);
+  console.log(`🚀 Redirecionando para checkout brasileiro: ${type}`);
+  console.log(`🔗 URL: ${CHECKOUT_CONFIG.primary}`);
   
-  // Redirecionamento real para Kirvano
-  if (type === 'primary') {
-    window.open(CHECKOUT_CONFIG.primary, '_blank');
+  // Prevenir qualquer comportamento padrão
+  if (typeof window !== 'undefined') {
+    // Redirecionamento real para Kirvano
+    if (type === 'primary') {
+      console.log('✅ Abrindo checkout Kirvano em nova aba...');
+      window.open(CHECKOUT_CONFIG.primary, '_blank');
+    } else {
+      // Para upsell, ainda usar placeholder
+      console.log('Upsell checkout - implementar quando necessário');
+    }
   } else {
-    // Para upsell, ainda usar placeholder
-    console.log('Upsell checkout - implementar quando necessário');
+    console.error('❌ Window object não disponível');
   }
 };
 

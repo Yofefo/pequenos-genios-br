@@ -59,3 +59,4 @@ echo "   - GitHub: https://github.com/seuusuario/pequenos-genios-br"
 echo "   - Vercel: https://vercel.com/dashboard"
 echo ""
 echo "⚠️  LEMBRE-SE: Este projeto é COMPLETAMENTE SEPARADO do português!"
+

@@ -2,7 +2,7 @@ import { ArrowRight, Shield, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface CTAProps {
-  onCtaClick: () => void;
+  onCtaClick: (e?: React.MouseEvent) => void;
 }
 
 export default function CTA({ onCtaClick }: CTAProps) {
@@ -26,7 +26,10 @@ export default function CTA({ onCtaClick }: CTAProps) {
 
           <div className="flex justify-center mb-8">
             <Button
-              onClick={onCtaClick}
+              onClick={(e) => {
+                console.log('🎯 CTA Principal clicado!');
+                onCtaClick(e);
+              }}
               data-evt="cta-primary"
               size="lg"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-3xl flex items-center space-x-3 animate-custom-pulse border-4 border-green-400"

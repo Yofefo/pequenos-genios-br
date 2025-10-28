@@ -252,3 +252,4 @@
 - Adaptar linguagem para português brasileiro
 - Preservar urgência e benefícios
 - Manter estrutura de vendas eficaz
+

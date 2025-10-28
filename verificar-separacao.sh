@@ -50,3 +50,4 @@ echo "   - Projeto português NÃO foi alterado"
 echo "   - Todos os commits foram apenas no repositório brasileiro"
 echo "   - Separação completa entre os projetos"
 echo "   - Zero risco de conflito"
+

@@ -55,3 +55,4 @@ echo "   - Todos os deploys, commits e pushes vão para o repositório brasileir
 echo "   - Nenhuma alteração afetará o projeto português"
 echo ""
 echo "📱 Execute os passos acima para finalizar a configuração!"
+

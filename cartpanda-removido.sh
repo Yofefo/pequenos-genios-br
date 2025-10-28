@@ -65,3 +65,4 @@ echo ""
 
 echo "🎯 PROJETO BRASILEIRO PRONTO PARA PERSONALIZAÇÃO!"
 echo "📱 Todas as referências ao CartPanda foram removidas com sucesso!"
+

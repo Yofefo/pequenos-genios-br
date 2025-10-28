@@ -69,3 +69,4 @@ echo ""
 echo "🎯 PROJETO PRONTO PARA USO!"
 echo "📱 Acesse o link da Vercel para testar:"
 echo "   https://pequenos-genios-b604qb9sj-fernandos-projects-32ecaa0a.vercel.app"
+

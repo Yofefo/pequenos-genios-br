@@ -370,3 +370,4 @@
 ---
 
 **📝 Este documento contém TODOS os textos e estruturas do front-end para tradução!**
+

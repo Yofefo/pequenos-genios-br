@@ -45,7 +45,13 @@ export default function Home() {
   // const router = useRouter();
 
 
-  const handleCtaClick = () => {
+  const handleCtaClick = (e?: React.MouseEvent) => {
+    // Prevenir qualquer comportamento padrão
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    
     // Rastrear evento de clique no CTA
     trackEvent('Lead', {
       content_name: 'Projeto Pequenos Génios - Método Brinca+',
