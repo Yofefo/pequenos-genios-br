@@ -40,8 +40,9 @@ export const redirectToCheckout = (type: 'primary' | 'upsell' = 'primary') => {
   if (typeof window !== 'undefined') {
     // Redirecionamento real para Kirvano
     if (type === 'primary') {
-      console.log('✅ Abrindo checkout Kirvano em nova aba...');
-      window.open(CHECKOUT_CONFIG.primary, '_blank');
+      console.log('✅ Redirecionando para checkout Kirvano...');
+      // Usar window.location.href para forçar redirecionamento imediato
+      window.location.href = CHECKOUT_CONFIG.primary;
     } else {
       // Para upsell, ainda usar placeholder
       console.log('Upsell checkout - implementar quando necessário');

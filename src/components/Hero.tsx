@@ -74,8 +74,17 @@ export default function Hero({ onCtaClick }: HeroProps) {
             <div className="space-y-4">
               <div className="flex justify-center">
                 <Button
-                  onClick={(e) => {
+                  type="button"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
                     console.log('🎯 Hero CTA clicado!');
+                    onCtaClick(e);
+                  }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('🎯 Hero CTA onClick!');
                     onCtaClick(e);
                   }}
                   data-evt="cta-primary"

@@ -26,8 +26,17 @@ export default function CTA({ onCtaClick }: CTAProps) {
 
           <div className="flex justify-center mb-8">
             <Button
-              onClick={(e) => {
+              type="button"
+              onMouseDown={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
                 console.log('🎯 CTA Principal clicado!');
+                onCtaClick(e);
+              }}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('🎯 CTA Principal onClick!');
                 onCtaClick(e);
               }}
               data-evt="cta-primary"

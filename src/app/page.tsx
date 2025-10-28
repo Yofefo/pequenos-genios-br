@@ -46,7 +46,7 @@ export default function Home() {
 
 
   const handleCtaClick = (e?: React.MouseEvent) => {
-    // Prevenir qualquer comportamento padrão
+    // Prevenir qualquer comportamento padrão de forma mais agressiva
     if (e) {
       e.preventDefault();
       e.stopPropagation();
@@ -62,6 +62,9 @@ export default function Home() {
     
     // Redirecionar para o gateway de pagamento brasileiro (Kirvano)
     redirectToCheckout('primary');
+    
+    // Retornar false para prevenir qualquer comportamento padrão
+    return false;
   };
 
   return (

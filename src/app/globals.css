@@ -88,6 +88,26 @@ body {
   outline-offset: 2px;
 }
 
+/* DESABILITAR SCROLL COMPORTAMENTO GLOBALMENTE */
+html {
+  scroll-behavior: auto !important;
+}
+
+/* Prevenir scroll em todos os elementos */
+* {
+  scroll-behavior: auto !important;
+}
+
+/* Prevenir scroll suave em links */
+a {
+  scroll-behavior: auto !important;
+}
+
+/* Prevenir scroll suave em botões */
+button {
+  scroll-behavior: auto !important;
+}
+
 /* Melhorias de performance */
 * {
   box-sizing: border-box;

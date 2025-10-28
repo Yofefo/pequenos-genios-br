@@ -20,8 +20,17 @@ export default function CTAIntermediario({ onCtaClick }: CTAIntermediarioProps) 
 
           <div className="flex justify-center">
             <Button
-              onClick={(e) => {
+              type="button"
+              onMouseDown={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
                 console.log('🎯 CTAIntermediario clicado!');
+                onCtaClick(e);
+              }}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('🎯 CTAIntermediario onClick!');
                 onCtaClick(e);
               }}
               data-evt="cta-intermediario"
