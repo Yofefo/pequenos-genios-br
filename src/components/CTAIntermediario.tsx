@@ -14,25 +14,10 @@ export default function CTAIntermediario() {
           </p>
 
           <div className="flex justify-center">
-            <button 
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                window.location.href = 'https://pay.kirvano.com/84dc1856-cdba-41e6-91ce-259d8dd6369f';
-              }}
-              className="bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-pink-500 text-white px-8 py-6 rounded-2xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center space-x-3 cursor-pointer border-0"
-              style={{ 
-                userSelect: 'none', 
-                WebkitUserSelect: 'none', 
-                MozUserSelect: 'none', 
-                msUserSelect: 'none',
-                outline: 'none',
-                border: 'none'
-              }}
-            >
+            <div className="bg-gradient-to-r from-primary to-accent text-white px-8 py-6 rounded-2xl text-2xl font-bold shadow-xl flex items-center space-x-3 opacity-50">
               <span>Quero Começar Hoje 🚀</span>
               <ArrowRight className="w-7 h-7" />
-            </button>
+            </div>
           </div>
         </div>
       </div>
