@@ -44,34 +44,6 @@ import { trackEvent } from '@/lib/pixel';
 export default function Home() {
   // const router = useRouter();
 
-  const handleScrollToPitch = () => {
-    // Scroll suave e lento para a seção do pitch (CTA principal)
-    const pitchSection = document.querySelector('[data-section="pitch"]') as HTMLElement;
-    if (pitchSection) {
-      const targetPosition = pitchSection.offsetTop - 100; // 100px de margem do topo
-      const startPosition = window.pageYOffset;
-      const distance = targetPosition - startPosition;
-      const duration = 2000; // 2 segundos para scroll mais lento
-      let start: number | null = null;
-
-      const animation = (currentTime: number) => {
-        if (start === null) start = currentTime;
-        const timeElapsed = currentTime - start;
-        const progress = Math.min(timeElapsed / duration, 1);
-        
-        // Função de easing para movimento mais suave
-        const easeInOutCubic = (t: number) => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
-        
-        window.scrollTo(0, startPosition + distance * easeInOutCubic(progress));
-        
-        if (timeElapsed < duration) {
-          requestAnimationFrame(animation);
-        }
-      };
-
-      requestAnimationFrame(animation);
-    }
-  };
 
   const handleCtaClick = () => {
     // Rastrear evento de clique no CTA
@@ -95,7 +67,7 @@ export default function Home() {
       
       <div className="min-h-screen bg-background">
       {/* SESSÃO 1: Titulo - Transforme o tédio em aprendizagem com o Projeto Pequenos Génios */}
-      <Hero onCtaClick={handleScrollToPitch} />
+      <Hero onCtaClick={handleCtaClick} />
       
       {/* SESSÃO 2: Titulo - O problema de hoje */}
       <ProblemTransformation />
@@ -110,7 +82,7 @@ export default function Home() {
       <Includes />
       
       {/* SESSÃO 6: Titulo - Dê o primeiro passo agora! */}
-      <CTAIntermediario onCtaClick={handleScrollToPitch} />
+      <CTAIntermediario onCtaClick={handleCtaClick} />
       
       {/* SESSÃO 7: Titulo - Pais e professores aprovam! */}
       <LazySocialProof />
